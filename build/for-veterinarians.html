@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Сириус | Личный кабинет</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="ProjectName — описание">
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body>
+    <div class="visually-hidden"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="icon-check" viewBox="0 0 16 12">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.77772 11.5557L0.222168 6.21381L1.77772 4.71808L5.77772 8.56424L14.2222 0.44458L15.7777 1.94031L5.77772 11.5557Z" fill="#FFFFFF"/>
+</symbol><symbol id="icon-clip" viewBox="0 0 20 20">
+<path d="M17.1784 7.82382L9.04692 15.865C7.6996 17.1975 5.51494 17.1975 4.16761 15.865C2.82028 14.5325 2.82028 12.3724 4.16761 11.0399L11.4863 3.80296C12.3847 2.91482 13.8406 2.91482 14.739 3.80296C15.6374 4.69108 15.6374 6.13154 14.739 7.01966L7.4203 14.2567C6.97138 14.701 6.24316 14.701 5.79367 14.2567C5.34475 13.8129 5.34475 13.0927 5.79367 12.6483L12.2991 6.21547L11.4857 5.41131L4.98094 11.8447C4.08253 12.7329 4.08253 14.1733 4.98094 15.0614C5.87935 15.9495 7.33521 15.9495 8.23362 15.0614L15.5523 7.8244C16.8997 6.49193 16.8997 4.33185 15.5523 2.99935C14.205 1.66688 12.0204 1.66688 10.673 2.99935L2.94765 10.6384L2.97564 10.6664C1.57232 12.4507 1.69569 15.03 3.35431 16.6697C5.01293 18.3095 7.62021 18.4323 9.42502 17.0438L9.45301 17.0718L17.9911 8.62856L17.1784 7.82382Z" fill="#6A3F24"/>
+</symbol><symbol id="icon-close" viewBox="0 0 20 20"><path d="M.293 18.291a1 1 0 101.414 1.414L10 11.413l8.292 8.292a1 1 0 101.414-1.414l-8.292-8.292 8.292-8.292A1 1 0 1018.291.293L9.999 8.585 1.707.293A1 1 0 10.293 1.707L8.585 10 .293 18.291z"/></symbol></svg>
+    </div>
+    <div class="wrapper">
+      <main>
+        <section class="account _for-veterinarians">
+          <div class="container account__container">
+            <h1 class="account__title">личный кабинет ветеринарного врача</h1>
+            <div class="account__wrapper">
+              <div class="account__menu">
+                <button class="btn account__menu-btn" type="button"><span>Мои данные</span><span class="account__menu-btn-icon"></span></button>
+                <div class="account__menu-content">
+                  <div class="account__menu-overlay"></div>
+                  <div class="account__menu-inner">
+                    <ul class="account__menu-list">
+                      <li class="account__menu-list-item current"><a class="account__menu-link">Мои данные</a></li>
+                      <li class="account__menu-list-item"><a class="link account__menu-link" href="#">Партнерская программа «Дружим вместе»</a></li>
+                      <li class="account__menu-list-item"><a class="link account__menu-link" href="#">Мероприятия и статьи</a></li>
+                    </ul>
+                    <div class="account__instructions">
+                      <p>Заполните свою учетную запись и отправьте нам на проверку.</p>
+                      <p>После подтверждения учетной записи Вам будут доступны программы обучения, партнерская программа «Дружим вместе» и участие в мероприятиях.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="account__content">
+                <div class="account__content-title-wrapper">
+                  <h2 class="account__content-title account__content-title--limit-width">Мои данные</h2>
+                  <div class="account__notification"></div>
+                </div>
+                <div class="account__form" data-validate data-callback="accountForm">
+                  <form>
+                    <div class="custom-input account-form__input" data-validate-type="email">
+                      <label><span class="custom-input__label">Email</span>
+                        <input type="text" placeholder="username@site.ru">
+                      </label>
+                    </div>
+                    <div class="custom-input account-form__input" data-validate-type="text">
+                      <label><span class="custom-input__label">Фамилия</span>
+                        <input type="text" placeholder="Иванов">
+                      </label>
+                    </div>
+                    <div class="custom-input account-form__input" data-validate-type="text">
+                      <label><span class="custom-input__label">Имя</span>
+                        <input type="text" placeholder="Иван">
+                      </label>
+                    </div>
+                    <div class="custom-input account-form__input" data-validate-type="text">
+                      <label><span class="custom-input__label">Отчество</span>
+                        <input type="text" placeholder="Укажите отчество">
+                      </label>
+                    </div>
+                    <div class="custom-select custom-select--placeholder account-form__select" data-select="" data-validate-type="select"><span class="custom-select__label">Страна</span><span class="custom-select__placeholder">Выберите страну</span>
+                      <button class="custom-select__button" type="button" aria-label="Выберите страну"><span class="custom-select__text"></span><span class="custom-select__icon"></span></button>
+                      <ul class="custom-select__list" role="listbox">
+                        <li class="custom-select__item" tabindex="0" data-select-value="Россия" aria-selected="false" role="option">Россия</li>
+                        <li class="custom-select__item" tabindex="0" data-select-value="Донецкая область" aria-selected="false" role="option">Донецкая область</li>
+                        <li class="custom-select__item" tabindex="0" data-select-value="Луганская область" aria-selected="false" role="option">Луганская область</li>
+                        <li class="custom-select__item" tabindex="0" data-select-value="Узбекистан" aria-selected="false" role="option">Узбекистан</li>
+                        <li class="custom-select__item" tabindex="0" data-select-value="Казахстан" aria-selected="false" role="option">Казахстан</li>
+                        <li class="custom-select__item" tabindex="0" data-select-value="Киргизия" aria-selected="false" role="option">Киргизия</li>
+                        <li class="custom-select__item" tabindex="0" data-select-value="Беларусь" aria-selected="false" role="option">Беларусь</li>
+                        <li class="custom-select__item" tabindex="0" data-select-value="Азербайджан" aria-selected="false" role="option">Азербайджан</li>
+                        <li class="custom-select__item" tabindex="0" data-select-value="Грузия" aria-selected="false" role="option">Грузия</li>
+                        <li class="custom-select__item" tabindex="0" data-select-value="Туркменистан" aria-selected="false" role="option">Туркменистан</li>
+                        <li class="custom-select__item" tabindex="0" data-select-value="Таджикистан" aria-selected="false" role="option">Таджикистан</li>
+                        <li class="custom-select__item" tabindex="0" data-select-value="Армения" aria-selected="false" role="option">Армения</li>
+                        <li class="custom-select__item" tabindex="0" data-select-value="Молдова" aria-selected="false" role="option">Молдова</li>
+                      </ul>
+                    </div>
+                    <div class="custom-input account-form__input" data-validate-type="text">
+                      <label><span class="custom-input__label">Населенный пункт</span>
+                        <input type="text" placeholder="Укажите населенный пункт">
+                      </label>
+                    </div>
+                    <div class="custom-input account-form__input" data-validate-type="phone">
+                      <label><span class="custom-input__label">Телефон</span>
+                        <input type="text" placeholder="+7 111 222-33-44">
+                      </label>
+                    </div>
+                    <div class="custom-input account-form__input" data-validate-type="text">
+                      <label><span class="custom-input__label">Сфера деятельности</span>
+                        <input type="text" placeholder="Укажите сферу деятельности">
+                      </label>
+                    </div>
+                    <div class="custom-input account-form__input" data-validate-type="text">
+                      <label><span class="custom-input__label">Название клиники</span>
+                        <input type="text" placeholder="Укажите название клиники">
+                      </label>
+                    </div>
+                    <div class="custom-input account-form__input" data-validate-type="text">
+                      <label><span class="custom-input__label">Должность</span>
+                        <input type="text" placeholder="Укажите занимаемую должность">
+                      </label>
+                    </div>
+                    <div class="custom-select custom-select--placeholder account-form__select" data-select="" data-validate-type="select"><span class="custom-select__label">Специализация</span><span class="custom-select__placeholder">Выберите специализацию</span>
+                      <button class="custom-select__button" type="button" aria-label="Выберите специализацию"><span class="custom-select__text"></span><span class="custom-select__icon"></span></button>
+                      <ul class="custom-select__list" role="listbox">
+                        <li class="custom-select__item" tabindex="0" data-select-value="Ветеринарный врач общего направления" aria-selected="false" role="option">Ветеринарный врач общего направления</li>
+                        <li class="custom-select__item" tabindex="0" data-select-value="Врач визуальной диагностики" aria-selected="false" role="option">Врач визуальной диагностики</li>
+                        <li class="custom-select__item" tabindex="0" data-select-value="Врач интенсивной терапии" aria-selected="false" role="option">Врач интенсивной терапии</li>
+                        <li class="custom-select__item" tabindex="0" data-select-value="Врач – лаборант" aria-selected="false" role="option">Врач – лаборант</li>
+                        <li class="custom-select__item" tabindex="0" data-select-value="Гепатолог" aria-selected="false" role="option">Гепатолог</li>
+                        <li class="custom-select__item" tabindex="0" data-select-value="Герпетолог" aria-selected="false" role="option">Герпетолог</li>
+                        <li class="custom-select__item" tabindex="0" data-select-value="Дерматолог" aria-selected="false" role="option">Дерматолог</li>
+                        <li class="custom-select__item" tabindex="0" data-select-value="Кардиолог" aria-selected="false" role="option">Кардиолог</li>
+                        <li class="custom-select__item" tabindex="0" data-select-value="Невролог" aria-selected="false" role="option">Невролог</li>
+                        <li class="custom-select__item" tabindex="0" data-select-value="Невропатолог" aria-selected="false" role="option">Невропатолог</li>
+                        <li class="custom-select__item" tabindex="0" data-select-value="Онколог" aria-selected="false" role="option">Онколог</li>
+                        <li class="custom-select__item" tabindex="0" data-select-value="Ортопед" aria-selected="false" role="option">Ортопед</li>
+                        <li class="custom-select__item" tabindex="0" data-select-value="Офтальмолог" aria-selected="false" role="option">Офтальмолог</li>
+                        <li class="custom-select__item" tabindex="0" data-select-value="Реабилитолог" aria-selected="false" role="option">Реабилитолог</li>
+                        <li class="custom-select__item" tabindex="0" data-select-value="Реаниматолог (анестезиолог)" aria-selected="false" role="option">Реаниматолог (анестезиолог)</li>
+                        <li class="custom-select__item" tabindex="0" data-select-value="Стоматолог" aria-selected="false" role="option">Стоматолог</li>
+                        <li class="custom-select__item" tabindex="0" data-select-value="Терапевт" aria-selected="false" role="option">Терапевт</li>
+                        <li class="custom-select__item" tabindex="0" data-select-value="Уролог" aria-selected="false" role="option">Уролог</li>
+                        <li class="custom-select__item" tabindex="0" data-select-value="Хирург" aria-selected="false" role="option">Хирург</li>
+                        <li class="custom-select__item" tabindex="0" data-select-value="Цитолог" aria-selected="false" role="option">Цитолог</li>
+                        <li class="custom-select__item" tabindex="0" data-select-value="Эндокринолог" aria-selected="false" role="option">Эндокринолог</li>
+                        <li class="custom-select__item" tabindex="0" data-select-value="Другое" aria-selected="false" role="option">Другое</li>
+                      </ul>
+                    </div>
+                    <div class="account-form__file-upload">
+                      <div class="account-form__file-desc">Дипломы</div>
+                      <div class="account-form__file-input">
+                        <input type="file" id="input-type-file">
+                        <label class="account-form__file-label" for="input-type-file">
+                          <svg width="20" height="20" aria-hidden="true">
+                            <use xlink:href="#icon-clip"></use>
+                          </svg><span>Загрузить документ</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="custom-toggle custom-toggle--checkbox account-form__checkbox" data-validate-type="checkbox">
+                      <input type="checkbox" name="account-form-agreement" id="account-form-agreement" checked>
+                      <label for="account-form-agreement"><span>Я согласен на обработку персональных данных</span></label>
+                    </div>
+                    <input class="btn account-form__submit-btn" type="submit" value="Отправить на проверку">
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="contact-us">
+          <div class="container contact-us__container">
+            <div class="contact-us__contacts">
+              <h2 class="contact-us__title">Контакты</h2>
+              <h3 class="contact-us__subtitle">Ветеринарный отдел Лимкорм</h3>
+              <ul class="contact-us__links">
+                <li class="contact-us__link-item"><a class="link contact-us__link">Александр Александрович Александров</a>
+                </li>
+                <li class="contact-us__link-item"><a class="link contact-us__link" href="tel:+71112223344">+8 111 222-33-44</a>
+                </li>
+                <li class="contact-us__link-item"><a class="link contact-us__link" href="mailto:username@limkorm.ru">username@limkorm.ru</a>
+                </li>
+                <li class="contact-us__link-item"><a class="link contact-us__link" href="mailto:office@limkorm.ru">office@limkorm.ru</a>
+                </li>
+              </ul>
+            </div>
+            <div class="contact-us__form">
+              <h2 class="contact-us__title">напишите нам</h2>
+              <div class="contact-u" data-validate data-callback="contactUsForm">
+                <form>
+                  <div class="custom-input contact-us__input" data-validate-type="text">
+                    <label>
+                      <input type="text" placeholder="ФИО">
+                    </label>
+                  </div>
+                  <div class="custom-input contact-us__input" data-validate-type="text">
+                    <label>
+                      <input type="text" placeholder="Название организации">
+                    </label>
+                  </div>
+                  <div class="custom-input contact-us__input" data-validate-type="text">
+                    <label>
+                      <input type="text" placeholder="Комментарий">
+                    </label>
+                  </div>
+                  <div class="custom-toggle custom-toggle--checkbox contact-us__checkbox" data-validate-type="checkbox">
+                    <input type="checkbox" name="contact-us-agreement" id="contact-us-agreement" checked>
+                    <label for="contact-us-agreement"><span>Я согласен на обработку персональных данных</span></label>
+                  </div>
+                  <div class="contact-us__notification"><span>111111</span></div>
+                  <input class="btn btn--dim contact-us__submit-btn" type="submit" value="Отправить">
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <div class="modal modal--preload modal--success-message">
+      <div class="modal__wrapper">
+        <div class="modal__overlay"></div>
+        <div class="modal__content">
+          <div class="modal-success-message__icon-wrapper">
+            <div class="modal-success-message__icon">
+              <svg width="16" height="12" aria-hidden="true">
+                <use xlink:href="#icon-check"></use>
+              </svg>
+            </div>
+          </div>
+          <p class="modal-success-message__message">Ваши данные отправлены на проверку!</p>
+          <button class="modal__close-btn" type="button" aria-label="Закрыть окно"></button>
+        </div>
+      </div>
+    </div>
+    <script src="js/vendor.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
