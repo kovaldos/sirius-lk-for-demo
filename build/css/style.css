@@ -1958,10 +1958,6 @@ button,
   user-select: none;
 }
 
-._for-veterinarians .account__menu-inner {
-  background-color: inherit;
-}
-
 ._for-pet-shops .account__content-item {
   width: 100%;
   min-height: 80px;
@@ -2318,6 +2314,445 @@ button,
   align-items: center;
 }
 
+._for-veterinarians .account__menu-inner {
+  background-color: inherit;
+}
+
+._for-veterinarians .account {
+  padding: 100px 0 80px;
+}
+
+._for-veterinarians .account__title {
+  position: relative;
+  margin: 0;
+  padding-bottom: 21px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.21;
+  text-transform: uppercase;
+}
+
+._for-veterinarians .account__title::before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 1px;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(3.98%, #658d1b), color-stop(13.98%, #688f1b), color-stop(24.66%, #70941b), color-stop(36.02%, #7e9d1c), color-stop(49.24%, #93aa1d), color-stop(64.32%, #adbb1e), color-stop(79.83%, #ced01f), color-stop(90.08%, #f3e821), color-stop(99.98%, #fcee21));
+  background-image: linear-gradient(90deg, #658d1b 3.98%, #688f1b 13.98%, #70941b 24.66%, #7e9d1c 36.02%, #93aa1d 49.24%, #adbb1e 64.32%, #ced01f 79.83%, #f3e821 90.08%, #fcee21 99.98%);
+}
+
+._for-veterinarians .account__wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 360px 1fr;
+  grid-template-columns: 360px 1fr;
+  gap: 40px;
+}
+
+._for-veterinarians .account__menu {
+  position: relative;
+  padding: 40px 20px;
+  background-color: rgba(112, 148, 27, 0.05);
+}
+
+._for-veterinarians .account__menu-btn {
+  position: relative;
+  z-index: 3;
+  display: none;
+  text-align: left;
+  width: 100%;
+  height: 60px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.43;
+  text-transform: none;
+  color: #70941b;
+  background-color: #f8f9f3;
+  border: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+._for-veterinarians .account__menu-btn-icon {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  margin-left: auto;
+  background-color: #6a3f24;
+  -webkit-transition: -webkit-transform 0.6s cubic-bezier(0.55, 0, 0.1, 1);
+  transition: -webkit-transform 0.6s cubic-bezier(0.55, 0, 0.1, 1);
+  transition: transform 0.6s cubic-bezier(0.55, 0, 0.1, 1);
+  transition: transform 0.6s cubic-bezier(0.55, 0, 0.1, 1), -webkit-transform 0.6s cubic-bezier(0.55, 0, 0.1, 1);
+  -webkit-clip-path: polygon(25% 40%, 75% 40%, 50% 65%);
+  clip-path: polygon(25% 40%, 75% 40%, 50% 65%);
+}
+
+.account__menu.open ._for-veterinarians .account__menu-btn-icon {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+._for-veterinarians .account__menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-color: rgba(255, 255, 255, 0);
+  cursor: pointer;
+  -webkit-transition: background-color 0.6s cubic-bezier(0.55, 0, 0.1, 1);
+  transition: background-color 0.6s cubic-bezier(0.55, 0, 0.1, 1);
+}
+
+.account__menu.open ._for-veterinarians .account__menu-overlay {
+  background-color: rgba(106, 63, 36, 0.5);
+}
+
+._for-veterinarians .account__menu-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+._for-veterinarians .account__menu-list:not(:last-child) {
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(106, 63, 36, 0.3);
+}
+
+._for-veterinarians .account__menu-list-item:not(:last-child) {
+  margin-bottom: 14px;
+}
+
+._for-veterinarians .account__menu-link {
+  font-size: 14px;
+  line-height: 1.43;
+  color: rgba(106, 63, 36, 0.34);
+}
+
+._for-veterinarians .account__menu-link:not([href]) {
+  color: #70941b;
+}
+
+._for-veterinarians .account__instructions:not(:last-child) {
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(106, 63, 36, 0.3);
+}
+
+._for-veterinarians .account__instructions p {
+  margin: 0;
+  font-style: italic;
+  font-size: 12px;
+  line-height: 1.5;
+  color: rgba(106, 63, 36, 0.8);
+}
+
+._for-veterinarians .account__instructions p:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+._for-veterinarians .account__content {
+  padding-top: 40px;
+}
+
+._for-veterinarians .account__content-title-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+._for-veterinarians .account__content-title {
+  margin: 0;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+}
+
+._for-veterinarians .account__content-title--limit-width {
+  width: 200px;
+}
+
+._for-veterinarians .account__notification {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  -webkit-transition: max-height 0.3s ease;
+  transition: max-height 0.3s ease;
+}
+
+._for-veterinarians .account__notification--success {
+  color: #4caf50;
+}
+
+._for-veterinarians .account__notification--error {
+  color: #ed1b33;
+}
+
+._for-veterinarians .account-form__input {
+  width: 100%;
+  padding: 0;
+}
+
+._for-veterinarians .account-form__input:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+._for-veterinarians .account-form__select {
+  width: 100%;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+._for-veterinarians .account-form__select:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+._for-veterinarians .account-form__select .custom-select__list {
+  width: calc(100% - 200px);
+}
+
+._for-veterinarians .account-form__file-upload {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 20px 0 40px;
+}
+
+._for-veterinarians .account-form__file-desc {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 180px;
+  flex: 0 0 180px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 20px;
+}
+
+._for-veterinarians .account-form__file-input input {
+  display: none;
+}
+
+._for-veterinarians .account-form__file-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 14px;
+  line-height: 1.43;
+  -webkit-text-decoration-line: underline;
+  text-decoration-line: underline;
+  -webkit-text-decoration-skip-ink: none;
+  text-decoration-skip-ink: none;
+}
+
+._for-veterinarians .account-form__file-label svg {
+  width: 20px;
+  height: 20px;
+}
+
+._for-veterinarians .account-form__file-label span:not(:first-child) {
+  margin-left: 10px;
+}
+
+._for-veterinarians .account-form__checkbox {
+  width: 100%;
+  padding: 0;
+}
+
+._for-veterinarians .account-form__checkbox:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+._for-veterinarians .account__content-description {
+  margin-top: 40px;
+}
+
+._for-veterinarians .account__scores-current {
+  margin: 40px 0 0 0;
+  padding: 20px;
+  border: 1px solid #70941b;
+  border-radius: 5px;
+  font-weight: 600;
+  color: #70941b;
+}
+
+._for-veterinarians .account__scores-description {
+  margin: 20px 0 0 0;
+}
+
+._for-veterinarians .account__scores-links-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin: 10px 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+._for-veterinarians .account__scores-link {
+  margin: 5px 20px 0 0;
+  color: #70941b;
+  text-decoration: underline;
+}
+
+._for-veterinarians .account__content-block-title {
+  font-weight: 600;
+  font-size: 16px;
+  margin: 40px 0 20px;
+}
+
+._for-veterinarians .account__benefits-main-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+._for-veterinarians .account__benefits-main-list-item {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40px auto;
+  grid-template-columns: 40px auto;
+  gap: 20px;
+}
+
+._for-veterinarians .account__benefits-main-list-item_color_pink .account__benefits-main-list-item-title {
+  background: linear-gradient(45.02deg, #bd2e73 9.36%, #eb5791 76.88%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+._for-veterinarians .account__benefits-main-list-item_color_blue .account__benefits-main-list-item-title {
+  background: linear-gradient(38.81deg, #0a95da 1.86%, #1cc5e3 84.09%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+._for-veterinarians .account__benefits-main-list-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+._for-veterinarians .account__benefits-main-list-item-title {
+  margin: 0 0 10px 0;
+}
+
+._for-veterinarians .account__benefits-main-list-item-description {
+  margin: 10px 0 0 0;
+}
+
+._for-veterinarians .account__benefits-main-list-item-description a {
+  color: #6a3f24;
+  text-decoration: underline;
+}
+
+._for-veterinarians .account__benefits-more-list {
+  padding: 0 0 0 20px;
+}
+
+._for-veterinarians .account__benefits-more-list-item::marker {
+  font-size: 6px;
+}
+
+._for-veterinarians .account__recommendations-registration-title {
+  font-weight: 500;
+  font-size: 14px;
+  color: #70941b;
+  margin: 40px 0 20px;
+}
+
+._for-veterinarians .account__recommendations-registration-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+._for-veterinarians .account__recommendations-registration-list-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+._for-veterinarians .account__recommendations-registration-list-item-link {
+  max-width: 280px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+._for-veterinarians .account__recommendations-registration-list-item-description {
+  margin: 0 0 10px;
+}
+
+._for-veterinarians .account__dates {
+  line-height: 1.67;
+}
+
+._for-veterinarians .account__dates-description {
+  margin-bottom: 0;
+}
+
+._for-veterinarians .account__dates-list {
+  margin-top: 0;
+  padding-left: 20px;
+}
+
+._for-veterinarians .account__dates-list-item::marker {
+  font-size: 6px;
+}
+
+._for-veterinarians .account__dates-link {
+  color: #70941b;
+  text-decoration: underline;
+}
+
+._for-veterinarians .account__content-tabs-switch.tabs__link._active {
+  background-color: #adbb1e;
+  border: 1px solid #adbb1e;
+}
+
+._for-veterinarians .account__content-tabs-item-title_article-title {
+  color: #70941b;
+}
+
+._for-veterinarians .account__content-tabs-item-address,
+._for-veterinarians .account__content-tabs-item-place {
+  color: #70941b;
+}
+
+._for-veterinarians .account__content-dwnld-btn {
+  border: 1px solid #70941b;
+  background-color: #70941b;
+}
+
+._for-veterinarians .account__content-dwnld-btn:hover,
+._for-veterinarians .account__content-dwnld-btn:focus {
+  color: #70941b !important;
+  background-color: transparent !important;
+}
+
 .contact-us {
   padding: 80px 0;
   background-color: #ede4de;
@@ -2470,6 +2905,12 @@ button,
     color: #6a3f24;
     background-color: #f8f9f3;
   }
+
+  ._for-veterinarians .account__menu-btn:not(:disabled):hover,
+  ._for-veterinarians .account__menu-btn:focus {
+    color: #6a3f24;
+    background-color: #f8f9f3;
+  }
 }
 
 @media (max-width: 1280px) {
@@ -2504,6 +2945,10 @@ button,
   ._for-pet-shops .account__content-tabs-item-place,
   ._for-pet-shops .account__content-tabs-item-address {
     text-align: left;
+  }
+
+  ._for-veterinarians .account {
+    padding-top: 60px;
   }
 }
 
@@ -2591,6 +3036,39 @@ button,
   ._for-pet-shops .account__content-tabs-block-items_trainings {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+  }
+
+  ._for-veterinarians .account__wrapper {
+    -ms-grid-columns: 295px 1fr;
+    grid-template-columns: 295px 1fr;
+  }
+
+  ._for-veterinarians .account__content-title-wrapper {
+    display: block;
+  }
+
+  ._for-veterinarians .account__notification {
+    overflow: hidden;
+    max-height: 0;
+  }
+
+  ._for-veterinarians .account__notification span {
+    display: block;
+    padding-top: 20px;
+  }
+
+  ._for-veterinarians .account-form__select .custom-select__list {
+    width: 100%;
+  }
+
+  ._for-veterinarians .account-form__file-upload {
+    display: block;
+    margin-top: 10px;
+  }
+
+  ._for-veterinarians .account-form__file-desc {
+    margin-right: 0;
+    margin-bottom: 10px;
   }
 
   .contact-us__container {
@@ -2683,17 +3161,126 @@ button,
     padding: 70px 0 0 0;
   }
 
-  ._for-veterinarians .account__menu-inner {
-    background-color: #fff;
-    padding: 70px 0 0 0;
-  }
-
   ._for-pet-shops .account__content-loyalty-discount-title {
     font-size: 14px;
   }
 
   ._for-pet-shops .account__content-loyalty-discount-table table {
     width: 628px;
+  }
+
+  ._for-veterinarians__container {
+    padding: 0 30px;
+  }
+
+  ._for-veterinarians .account__menu-inner {
+    background-color: #fff;
+    padding: 70px 0 0 0;
+  }
+
+  ._for-veterinarians .account {
+    padding-bottom: 40px;
+  }
+
+  ._for-veterinarians .account__title {
+    font-size: 12px;
+  }
+
+  ._for-veterinarians .account__wrapper {
+    display: block;
+  }
+
+  ._for-veterinarians .account__menu {
+    padding: 0;
+  }
+
+  ._for-veterinarians .account__menu-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0 20px;
+  }
+
+  ._for-veterinarians .account__menu-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    max-height: 60px;
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition: max-height 0.6s cubic-bezier(0.55, 0, 0.1, 1), opacity 0s 0.6s, visibility 0s 0.6s, -webkit-box-shadow 0.6s cubic-bezier(0.55, 0, 0.1, 1);
+    transition: max-height 0.6s cubic-bezier(0.55, 0, 0.1, 1), opacity 0s 0.6s, visibility 0s 0.6s, -webkit-box-shadow 0.6s cubic-bezier(0.55, 0, 0.1, 1);
+    transition: max-height 0.6s cubic-bezier(0.55, 0, 0.1, 1), box-shadow 0.6s cubic-bezier(0.55, 0, 0.1, 1), opacity 0s 0.6s, visibility 0s 0.6s;
+    transition: max-height 0.6s cubic-bezier(0.55, 0, 0.1, 1), box-shadow 0.6s cubic-bezier(0.55, 0, 0.1, 1), opacity 0s 0.6s, visibility 0s 0.6s, -webkit-box-shadow 0.6s cubic-bezier(0.55, 0, 0.1, 1);
+  }
+
+  .account__menu.open ._for-veterinarians .account__menu-content {
+    visibility: visible;
+    opacity: 1;
+    -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+    -webkit-transition: max-height 0.6s cubic-bezier(0.55, 0, 0.1, 1), opacity 0s, visibility 0s, -webkit-box-shadow 0.6s cubic-bezier(0.55, 0, 0.1, 1);
+    transition: max-height 0.6s cubic-bezier(0.55, 0, 0.1, 1), opacity 0s, visibility 0s, -webkit-box-shadow 0.6s cubic-bezier(0.55, 0, 0.1, 1);
+    transition: max-height 0.6s cubic-bezier(0.55, 0, 0.1, 1), box-shadow 0.6s cubic-bezier(0.55, 0, 0.1, 1), opacity 0s, visibility 0s;
+    transition: max-height 0.6s cubic-bezier(0.55, 0, 0.1, 1), box-shadow 0.6s cubic-bezier(0.55, 0, 0.1, 1), opacity 0s, visibility 0s, -webkit-box-shadow 0.6s cubic-bezier(0.55, 0, 0.1, 1);
+  }
+
+  ._for-veterinarians .account__menu-inner {
+    padding: 70px 20px 14px 20px;
+    background-color: #ffffff;
+  }
+
+  ._for-veterinarians .account__menu-list:not(:last-child) {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+
+  ._for-veterinarians .account__menu-list-item.current {
+    margin-bottom: 0;
+  }
+
+  ._for-veterinarians .account__menu-link:not([href]) {
+    display: none;
+  }
+
+  ._for-veterinarians .account__instructions {
+    display: none;
+  }
+
+  ._for-veterinarians .account__content {
+    padding-top: 20px;
+  }
+
+  ._for-veterinarians .account__content-title {
+    font-size: 14px;
+  }
+
+  ._for-veterinarians .account__content-description {
+    margin-top: 20px;
+  }
+
+  ._for-veterinarians .account__scores-current {
+    margin-top: 20px;
+  }
+
+  ._for-veterinarians .account__content-block-title {
+    font-size: 14px;
+  }
+
+  ._for-veterinarians .account__recommendations-registration-title {
+    margin-top: 20px;
   }
 
   .contact-us__container {
@@ -2813,6 +3400,14 @@ button,
 
   ._for-pet-shops .account__content_distributors-desc-btn {
     margin-top: 20px;
+  }
+
+  ._for-veterinarians__container {
+    padding: 0 20px;
+  }
+
+  ._for-veterinarians .account__recommendations-registration-list-item-link {
+    max-width: 100%;
   }
 
   .contact-us__container {
