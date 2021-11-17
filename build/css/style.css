@@ -2680,10 +2680,12 @@ button,
 
   ._for-manufacturers .account__menu-inner {
     background-color: #fff;
+    padding: 70px 0 0 0;
   }
 
   ._for-veterinarians .account__menu-inner {
     background-color: #fff;
+    padding: 70px 0 0 0;
   }
 
   ._for-pet-shops .account__content-loyalty-discount-title {
