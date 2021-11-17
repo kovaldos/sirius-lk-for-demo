@@ -2758,8 +2758,21 @@ button,
   background-image: linear-gradient(90deg, #DC5503 3.98%, #FCA916 99.11%);
 }
 
+._for-nursery .account__menu {
+  background-color: rgba(220, 85, 3, 0.05);
+}
+
+._for-nursery .account__menu-inner {
+  background-color: inherit;
+}
+
 ._for-nursery .account__menu-link:not([href]) {
   color: #DC5503;
+}
+
+._for-nursery .account__menu-link:hover,
+._for-nursery .account__menu-link:focus {
+  color: #DC5503 !important;
 }
 
 ._for-nursery .account__menu-btn {
@@ -2889,6 +2902,11 @@ button,
 
 .contact-us__submit-btn {
   margin-top: 20px;
+}
+
+._for-nursery .contact-us__link {
+  display: block;
+  margin: 5px 0 30px 0;
 }
 
 /* @media (hover: hover), screen and (min-width: 0\0) {
@@ -3317,6 +3335,7 @@ button,
 
   ._for-nursery .account__menu-inner {
     padding: 70px 40px 20px 20px;
+    background-color: #fff;
   }
 
   .contact-us__container {
