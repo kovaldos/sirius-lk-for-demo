@@ -2824,6 +2824,84 @@ button,
   background-color: #DC5503;
 }
 
+._for-nursery .account__scores-current {
+  color: #DC5503;
+  border: 1px solid #DC5503;
+}
+
+._for-nursery .account__scores-link {
+  color: #DC5503;
+}
+
+._for-nursery .account__benefits-main-list-item_color_grd-orange .account__benefits-main-list-item-title {
+  background: -webkit-gradient(linear, left top, right top, color-stop(3.98%, #DC5503), color-stop(99.11%, #FCA916));
+  background: linear-gradient(90deg, #DC5503 3.98%, #FCA916 99.11%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+._for-nursery .account__benefits-main-list-item_color_grd-blue .account__benefits-main-list-item-title {
+  background: -webkit-gradient(linear, left top, right top, color-stop(3.98%, #0385D7), color-stop(99.11%, #21D1E5));
+  background: linear-gradient(90deg, #0385D7 3.98%, #21D1E5 99.11%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+._for-nursery .account__benefits-main-list-item_color_grd-red .account__benefits-main-list-item-title {
+  background: -webkit-gradient(linear, left top, right top, color-stop(3.98%, #96145E), color-stop(99.11%, #EE4587));
+  background: linear-gradient(90deg, #96145E 3.98%, #EE4587 99.11%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+._for-nursery .account__benefits-main-list-item_color_grd-green .account__benefits-main-list-item-title {
+  background: -webkit-gradient(linear, left top, right top, color-stop(3.98%, #01801D), color-stop(99.11%, #01D00B));
+  background: linear-gradient(90deg, #01801D 3.98%, #01D00B 99.11%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+._for-nursery .account__loyalty {
+  margin-top: 40px;
+}
+
+._for-nursery .account__loyalty-title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+._for-nursery .account__loyalty-table-box {
+  overflow-x: auto;
+}
+
+._for-nursery .account__loyalty-table {
+  width: 780px;
+  border: 1px solid rgba(106, 63, 36, 0.6);
+  border-collapse: collapse;
+}
+
+._for-nursery .account__loyalty-table thead {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  background-color: #ede4de;
+}
+
+._for-nursery .account__loyalty-table th,
+._for-nursery .account__loyalty-table td {
+  padding: 10px 20px;
+  border: 1px solid rgba(106, 63, 36, 0.6);
+  text-align: left;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+}
+
 ._for-nursery .btn:focus,
 ._for-nursery .btn:not(:disabled):hover {
   color: #DC5503 !important;
