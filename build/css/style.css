@@ -2824,6 +2824,32 @@ button,
   background-color: #DC5503;
 }
 
+._for-nursery .account__content.create-event .account__content-title-wrapper {
+  margin-bottom: 40px;
+}
+
+._for-nursery .account__content.create-event .account__notification {
+  margin-bottom: 10px;
+}
+
+._for-nursery .account__content.create-event .account__notification--success {
+  border: 1px solid #4caf50;
+  border-radius: 5px;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+._for-nursery .account__content.create-event .account-form__submit-btn {
+  margin-top: 40px;
+}
+
 ._for-nursery .account__scores-current {
   color: #DC5503;
   border: 1px solid #DC5503;
@@ -3458,6 +3484,10 @@ button,
     margin-bottom: 10px;
   }
 
+  ._for-nursery .account__content.create-event .account__notification--success {
+    padding-top: 0;
+  }
+
   .ask-a-question {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -3816,6 +3846,11 @@ button,
 
   ._for-veterinarians .account__recommendations-registration-list-item-link {
     max-width: 100%;
+  }
+
+  ._for-nursery .account__content.create-event .account-form__submit-btn {
+    max-width: 100%;
+    width: 100%;
   }
 
   ._for-nursery .account__brider-calc-table.table_cats tr td:first-of-type {

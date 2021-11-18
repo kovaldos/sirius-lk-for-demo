@@ -203,18 +203,18 @@
             <h1 class="account__title">личный кабинет питомника</h1>
             <div class="account__wrapper">
               <div class="account__menu">
-                <button class="btn account__menu-btn" type="button"><span>Мои данные</span><span class="account__menu-btn-icon"></span></button>
+                <button class="btn account__menu-btn" type="button"><span>Создать мероприятие</span><span class="account__menu-btn-icon"></span></button>
                 <div class="account__menu-content">
                   <div class="account__menu-overlay"></div>
                   <div class="account__menu-inner">
                     <ul class="account__menu-list">
-                      <li class="account__menu-list-item current"><a class="account__menu-link">Мои данные</a></li>
+                      <li class="account__menu-list-item"><a class="link account__menu-link" href="#">Мои данные</a></li>
                       <li class="account__menu-list-item"><a class="link account__menu-link" href="#">Бридер-программа и уровень скидки</a></li>
                       <li class="account__menu-list-item"><a class="link account__menu-link" href="#">Выкорм</a></li>
                       <li class="account__menu-list-item"><a class="link account__menu-link" href="#">Рекламные материалы</a></li>
                       <li class="account__menu-list-item"><a class="link account__menu-link" href="#">Прайс-лист</a></li>
                       <li class="account__menu-list-item"><a class="link account__menu-link" href="#">Обучение и вет. помощь</a></li>
-                      <li class="account__menu-list-item"><a class="link account__menu-link" href="#">Создать мероприятие</a></li>
+                      <li class="account__menu-list-item current"><a class="account__menu-link">Создать мероприятие</a></li>
                       <li class="account__menu-list-item"><a class="link account__menu-link" href="#">Мои мероприятия</a></li>
                     </ul>
                     <div class="account__instructions">
@@ -224,86 +224,34 @@
                   </div>
                 </div>
               </div>
-              <div class="account__content">
+              <div class="account__content create-event">
                 <div class="account__content-title-wrapper">
-                  <h2 class="account__content-title account__content-title--limit-width">Мои данные</h2>
+                  <h2 class="account__content-title">Создать мероприятие</h2>
                 </div>
-                <div class="account__notification"></div>
-                <div class="account__form" data-validate data-callback="accountForm">
+                <div class="account__form create-event__form" data-validate data-callback="accountForm">
+                  <div class="account__notification"></div>
                   <form>
-                    <div class="custom-input account-form__input" data-validate-type="email">
-                      <label><span class="custom-input__label">Email</span>
-                        <input type="text" placeholder="username@site.ru">
+                    <div class="custom-input account-form__input" data-validate-type="text">
+                      <label><span class="custom-input__label">Название</span>
+                        <input type="text" placeholder="Укажите название мероприятия">
                       </label>
                     </div>
                     <div class="custom-input account-form__input" data-validate-type="text">
-                      <label><span class="custom-input__label">Фамилия</span>
-                        <input type="text" placeholder="Иванов">
+                      <label><span class="custom-input__label">Место проведения</span>
+                        <input type="text" placeholder="Укажите место проведения">
                       </label>
                     </div>
                     <div class="custom-input account-form__input" data-validate-type="text">
-                      <label><span class="custom-input__label">Имя</span>
-                        <input type="text" placeholder="Иван">
-                      </label>
-                    </div>
-                    <div class="custom-select custom-select--placeholder account-form__select" data-select="" data-validate-type="select"><span class="custom-select__label">Страна</span><span class="custom-select__placeholder">Выберите страну</span>
-                      <button class="custom-select__button" type="button" aria-label="Выберите страну"><span class="custom-select__text"></span><span class="custom-select__icon"></span></button>
-                      <ul class="custom-select__list" role="listbox">
-                        <li class="custom-select__item" tabindex="0" data-select-value="Россия" aria-selected="false" role="option">Россия</li>
-                        <li class="custom-select__item" tabindex="0" data-select-value="Донецкая область" aria-selected="false" role="option">Донецкая область</li>
-                        <li class="custom-select__item" tabindex="0" data-select-value="Луганская область" aria-selected="false" role="option">Луганская область</li>
-                        <li class="custom-select__item" tabindex="0" data-select-value="Узбекистан" aria-selected="false" role="option">Узбекистан</li>
-                        <li class="custom-select__item" tabindex="0" data-select-value="Казахстан" aria-selected="false" role="option">Казахстан</li>
-                        <li class="custom-select__item" tabindex="0" data-select-value="Киргизия" aria-selected="false" role="option">Киргизия</li>
-                        <li class="custom-select__item" tabindex="0" data-select-value="Беларусь" aria-selected="false" role="option">Беларусь</li>
-                        <li class="custom-select__item" tabindex="0" data-select-value="Азербайджан" aria-selected="false" role="option">Азербайджан</li>
-                        <li class="custom-select__item" tabindex="0" data-select-value="Грузия" aria-selected="false" role="option">Грузия</li>
-                        <li class="custom-select__item" tabindex="0" data-select-value="Туркменистан" aria-selected="false" role="option">Туркменистан</li>
-                        <li class="custom-select__item" tabindex="0" data-select-value="Таджикистан" aria-selected="false" role="option">Таджикистан</li>
-                        <li class="custom-select__item" tabindex="0" data-select-value="Армения" aria-selected="false" role="option">Армения</li>
-                        <li class="custom-select__item" tabindex="0" data-select-value="Молдова" aria-selected="false" role="option">Молдова</li>
-                      </ul>
-                    </div>
-                    <div class="custom-input account-form__input" data-validate-type="text">
-                      <label><span class="custom-input__label">Населенный пункт</span>
-                        <input type="text" placeholder="Укажите населенный пункт">
-                      </label>
-                    </div>
-                    <div class="custom-input account-form__input" data-validate-type="phone">
-                      <label><span class="custom-input__label">Телефон</span>
-                        <input type="text" placeholder="+7 111 222-33-44">
+                      <label><span class="custom-input__label">Описание</span>
+                        <input type="text" placeholder="Опишите мероприятие">
                       </label>
                     </div>
                     <div class="custom-input account-form__input" data-validate-type="text">
-                      <label><span class="custom-input__label">Название компании</span>
-                        <input type="text" placeholder="Укажите название компании">
+                      <label><span class="custom-input__label">Ссылка</span>
+                        <input type="text" placeholder="Укажите ссылку на мероприятие">
                       </label>
                     </div>
-                    <div class="custom-input account-form__input" data-validate-type="text">
-                      <label><span class="custom-input__label">Вид животных</span>
-                        <input type="text" placeholder="Укажите вид животных">
-                      </label>
-                    </div>
-                    <div class="custom-input account-form__input" data-validate-type="text">
-                      <label><span class="custom-input__label">Количество животных</span>
-                        <input type="text" placeholder="Укажите количество животных">
-                      </label>
-                    </div>
-                    <div class="account-form__file-upload">
-                      <div class="account-form__file-desc">Документы</div>
-                      <div class="account-form__file-input"></div>
-                      <input type="file" id="input-type-file">
-                      <label class="account-form__file-label" for="input-type-file">
-                        <svg width="20" height="20" aria-hidden="true">
-                          <use xlink:href="#icon-clip"></use>
-                        </svg><span>Загрузить документ</span>
-                      </label>
-                    </div>
-                    <div class="custom-toggle custom-toggle--checkbox account-form__checkbox" data-validate-type="checkbox">
-                      <input type="checkbox" name="account-form-agreement" id="account-form-agreement" checked>
-                      <label for="account-form-agreement"><span>Я согласен на обработку персональных данных</span></label>
-                    </div>
-                    <input class="btn account-form__submit-btn" type="submit" value="Отправить на проверку">
+                    <input class="btn account-form__submit-btn" type="submit" value="Создать мероприятие">
                   </form>
                 </div>
               </div>
@@ -363,7 +311,7 @@
               </svg>
             </div>
           </div>
-          <p class="modal-success-message__message">Ваши данные отправлены на проверку!</p>
+          <p class="modal-success-message__message">Мероприятие создано!</p>
           <button class="modal__close-btn" type="button" aria-label="Закрыть окно"></button>
         </div>
       </div>
