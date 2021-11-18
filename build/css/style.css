@@ -2792,10 +2792,85 @@ button,
   cursor: pointer;
 }
 
+._for-nursery .account__content-tabs-switch.tabs__link._active {
+  border: 1px solid #DC5503;
+  background-color: #DC5503;
+}
+
+._for-nursery .account__content-tabs-switch_trainings.tabs__link._active {
+  border: 1px solid #f28e10;
+  background-color: #f28e10;
+}
+
+._for-nursery .account__content-tabs-item-link {
+  color: #DC5503;
+}
+
+._for-nursery .account__content-tabs-item-title_article-title {
+  color: #DC5503;
+}
+
+._for-nursery .account__content-tabs-item-place,
+._for-nursery .account__content-tabs-item-address {
+  color: #DC5503;
+}
+
+._for-nursery .account__content-items-disclaimer {
+  margin-top: 40px;
+}
+
+._for-nursery .account__content-dwnld-btn {
+  border: 1px solid #DC5503;
+  background-color: #DC5503;
+}
+
 ._for-nursery .btn:focus,
 ._for-nursery .btn:not(:disabled):hover {
   color: #DC5503 !important;
   background-color: #fff !important;
+}
+
+.ask-a-question {
+  width: 100%;
+  margin-top: 40px;
+  padding: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  background-color: #cdc1b2;
+}
+
+.ask-a-question__heading {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 321px;
+  flex: 0 0 321px;
+  margin-right: 40px;
+  color: #fff;
+}
+
+.ask-a-question__subtitle {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  margin-top: 10px;
+}
+
+.ask-a-question__tel-link {
+  color: inherit;
+}
+
+.ask-a-question__tel-link:hover {
+  text-decoration: underline;
+}
+
+.ask-a-question__form {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
 }
 
 .contact-us {
@@ -3119,6 +3194,22 @@ button,
   ._for-veterinarians .account-form__file-desc {
     margin-right: 0;
     margin-bottom: 10px;
+  }
+
+  .ask-a-question {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .ask-a-question__heading {
+    -webkit-box-flex: 1;
+    -ms-flex: auto;
+    flex: auto;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
   }
 
   .contact-us__container {
