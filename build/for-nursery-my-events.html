@@ -203,7 +203,7 @@
             <h1 class="account__title">личный кабинет питомника</h1>
             <div class="account__wrapper">
               <div class="account__menu">
-                <button class="btn account__menu-btn" type="button"><span>Прайс-лист</span><span class="account__menu-btn-icon"></span></button>
+                <button class="btn account__menu-btn" type="button"><span>Мои мероприятия</span><span class="account__menu-btn-icon"></span></button>
                 <div class="account__menu-content">
                   <div class="account__menu-overlay"></div>
                   <div class="account__menu-inner">
@@ -212,10 +212,10 @@
                       <li class="account__menu-list-item"><a class="link account__menu-link" href="#">Бридер-программа и уровень скидки</a></li>
                       <li class="account__menu-list-item"><a class="link account__menu-link" href="#">Выкорм</a></li>
                       <li class="account__menu-list-item"><a class="link account__menu-link" href="#">Рекламные материалы</a></li>
-                      <li class="account__menu-list-item current"><a class="account__menu-link">Прайс-лист</a></li>
+                      <li class="account__menu-list-item"><a class="link account__menu-link" href="#">Прайс-лист</a></li>
                       <li class="account__menu-list-item"><a class="link account__menu-link" href="#">Обучение и вет. помощь</a></li>
                       <li class="account__menu-list-item"><a class="link account__menu-link" href="#">Создать мероприятие</a></li>
-                      <li class="account__menu-list-item"><a class="link account__menu-link" href="#">Мои мероприятия</a></li>
+                      <li class="account__menu-list-item current"><a class="account__menu-link">Мои мероприятия</a></li>
                     </ul>
                     <div class="account__instructions">
                       <p>Заполните свою учетную запись и отправьте нам на проверку.</p>
@@ -224,22 +224,31 @@
                   </div>
                 </div>
               </div>
-              <div class="account__content">
+              <div class="account__content my-events">
                 <div class="account__content-title-wrapper">
-                  <h2 class="account__content-title account__content-title--limit-width">Прайс-лист</h2>
+                  <h2 class="account__content-title account__content-title--limit-width">Мои мероприятия</h2>
                 </div>
                 <div class="account__content-items"> 
-                  <div class="account__content-item">
-                    <div class="account__content-item-text"><span>Прайс-лист. Полнорационные сухие корма. 01.11.2021</span></div>
-                    <div class="account__content-item-btn"> <a class="account__content-dwnld-btn btn" href="#" download>Скачать</a></div>
+                  <h3 class="account__content-item-title">Ожидают подтверждения</h3>
+                  <div class="account__content-item await-for-confirm">
+                    <h4 class="account__content-item-inner-title">Название мероприятия</h4>
+                    <div class="account__content-item-date"> <span class="account__content-item-span">Дата проведения:</span></div>
+                    <div class="account__content-item-desc"> 
+                      <p class="account__content-item-desc text">Описание мероприятия. Morbi auctor risus at sem egestas vestibulum. Vivamus vitae tellus tempor, mollis nunc eget, sodales quam.</p>
+                    </div>
+                    <div class="account__content-item-place"> <span class="account__content-item-span">Место проведения:</span><span class="account__content-item-span"></span></div>
+                    <div class="account__content-item-links"> <a class="account__content-item-link-open" href="#">ссылка</a><a class="account__content-item-link-btn btn btn--unconfirmed-event" href="#">Открыть</a></div>
                   </div>
-                  <div class="account__content-item">
-                    <div class="account__content-item-text"><span>Прайс-лист. Полнорационные сухие корма. 01.12.2021</span></div>
-                    <div class="account__content-item-btn"> <a class="account__content-dwnld-btn btn" href="#" download>Скачать</a></div>
+                  <h3 class="account__content-item-title">Подтвержденные мероприятия</h3>
+                  <div class="account__content-item confirmed">
+                    <h4 class="account__content-item-inner-title">Название мероприятия</h4>
+                    <div class="account__content-item-date"> <span class="account__content-item-span">Дата проведения:</span><span class="account__content-item-span">21 декабря 2021</span></div>
+                    <div class="account__content-item-desc"> 
+                      <p class="account__content-item-desc text">Описание мероприятия. Morbi auctor risus at sem egestas vestibulum. Vivamus vitae tellus tempor, mollis nunc eget, sodales quam.</p>
+                    </div>
+                    <div class="account__content-item-place"> <span class="account__content-item-span">Место проведения:</span><span class="account__content-item-span"></span></div>
+                    <div class="account__content-item-links"> <a class="account__content-item-link-open" href="#">ссылка</a><a class="account__content-item-link-btn btn btn--confirmed-event" href="for-nursery-my-confirmed-events.html">Открыть</a></div>
                   </div>
-                </div>
-                <div class="account__content-items-disclaimer">
-                  <p class="account__content-items-disclaimer-text">Все цены по прайс-листу идут без учета персональной скидки на корм.</p>
                 </div>
               </div>
             </div>

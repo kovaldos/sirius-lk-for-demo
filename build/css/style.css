@@ -2850,6 +2850,156 @@ button,
   margin-top: 40px;
 }
 
+._for-nursery .account__content.my-events .account__content-item {
+  display: block;
+}
+
+._for-nursery .account__content.my-events .account__content-item-title {
+  color: #DC5503;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+._for-nursery .account__content.my-events .account__content-item-inner-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0;
+}
+
+._for-nursery .account__content.my-events .account__content-item-date {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
+  margin-top: 20px;
+}
+
+._for-nursery .account__content.my-events .account__content-item-desc {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+._for-nursery .account__content.my-events .account__content-item-place {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+._for-nursery .account__content.my-events .account__content-item-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+._for-nursery .account__content.my-events .account__content-item-link-open {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
+  -webkit-text-decoration-line: underline;
+  text-decoration-line: underline;
+  color: #DC5503;
+  margin: 0 25px 0 0;
+}
+
+._for-nursery .account__content.my-events .account__content-item-link-open:hover {
+  text-decoration: none;
+}
+
+._for-nursery .account__content.my-events .account__content-item-link-btn {
+  width: 100%;
+  max-width: 240px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: 1px solid #DC5503;
+  background-color: #DC5503;
+  margin-top: 15px;
+}
+
+._for-nursery .account__content.my-events .account__content-item-link-btn.btn--unconfirmed-event {
+  opacity: 0.6;
+}
+
+._for-nursery .account__content.my-events .account__content-item-link-btn.btn--confirmed-event {
+  opacity: 1;
+}
+
+._for-nursery .account__content.my-confirmed-events .account__content-item {
+  border: none;
+  display: block;
+  padding: 0;
+}
+
+._for-nursery .account__content.my-confirmed-events .account__content-item-inner-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+._for-nursery .account__content.my-confirmed-events .account__content-item-link-open {
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  -webkit-text-decoration-line: underline;
+  text-decoration-line: underline;
+  color: #DC5503;
+  margin-top: 20px;
+}
+
+._for-nursery .account__content.my-confirmed-events .account__content-item-link-btn {
+  width: 100%;
+  max-width: 280px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: 1px solid #DC5503;
+  background-color: #DC5503;
+  margin-top: 20px;
+}
+
+._for-nursery .account__content.my-confirmed-events .account__content-item-link-dwnld {
+  display: block;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  -webkit-text-decoration-line: underline;
+  text-decoration-line: underline;
+  color: #DC5503;
+  margin-top: 80px;
+}
+
+._for-nursery .account__content.my-confirmed-events .account__content-item-qr-title {
+  margin-top: 80px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+}
+
 ._for-nursery .account__scores-current {
   color: #DC5503;
   border: 1px solid #DC5503;
@@ -3764,6 +3914,21 @@ button,
     width: 100%;
   }
 
+  ._for-nursery .account__content.my-events .account__content-item-links {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    margin-top: 10px;
+  }
+
+  ._for-nursery .account__content.my-events .account__content-item-link-btn {
+    margin-top: 20px;
+  }
+
   .contact-us__container {
     padding: 0 35px;
   }
@@ -3851,6 +4016,14 @@ button,
   ._for-nursery .account__content.create-event .account-form__submit-btn {
     max-width: 100%;
     width: 100%;
+  }
+
+  ._for-nursery .account__content.my-events .account__content-item-link-btn {
+    max-width: 100%;
+  }
+
+  ._for-nursery .account__content.my-confirmed-events .account__content-item-link-btn {
+    max-width: 100%;
   }
 
   ._for-nursery .account__brider-calc-table.table_cats tr td:first-of-type {
