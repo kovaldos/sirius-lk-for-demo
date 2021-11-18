@@ -2865,6 +2865,190 @@ button,
   color: transparent;
 }
 
+._for-nursery .account__conditions-main-list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+._for-nursery .account__conditions-main-list-item-pic {
+  margin-right: 20px;
+}
+
+._for-nursery .account__conditions-main-list-item-description {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+._for-nursery .account__conditions-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  max-width: 230px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #DC5503;
+  margin-bottom: 20px;
+  background-color: transparent;
+  border: none;
+  padding: 5px 0;
+  cursor: pointer;
+}
+
+._for-nursery .account__conditions-volume-table-container {
+  overflow-x: auto;
+}
+
+._for-nursery .account__conditions-volume-table {
+  width: 780px;
+  border: 1px solid rgba(106, 63, 36, 0.6);
+  border-collapse: collapse;
+}
+
+._for-nursery .account__conditions-volume-table thead {
+  background-color: #ede4de;
+}
+
+._for-nursery .account__conditions-volume-table th,
+._for-nursery .account__conditions-volume-table td {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: left;
+  padding: 20px;
+  border: 1px solid rgba(106, 63, 36, 0.6);
+}
+
+._for-nursery .account__conditions-volume-table td {
+  padding: 10px 20px;
+}
+
+._for-nursery .account__conditions-apply-link {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  max-width: 280px;
+  border: 1px solid #DC5503;
+  background-color: #DC5503;
+}
+
+._for-nursery .account__brider-calc {
+  margin-top: 60px;
+}
+
+._for-nursery .account__brider-calc-title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+._for-nursery .account__brider-calc-text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+._for-nursery .account__brider-calc-table-box {
+  overflow: hidden;
+}
+
+._for-nursery .account__brider-calc-table-title {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+._for-nursery .account__brider-calc-table {
+  width: 100%;
+  max-width: 780px;
+  min-width: 628px;
+  border: 1px solid rgba(106, 63, 36, 0.6);
+  border-collapse: collapse;
+}
+
+._for-nursery .account__brider-calc-table tr td {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: left;
+  padding: 15px;
+  border: 1px solid rgba(106, 63, 36, 0.6);
+}
+
+._for-nursery .account__brider-calc-table tr td:first-of-type {
+  background-color: #ede4de;
+}
+
+._for-nursery .account__brider-calc-table-dogs-container {
+  overflow-x: auto;
+}
+
+._for-nursery .account__brider-calc-table.table_cats {
+  min-width: 280px;
+}
+
+._for-nursery .account__brider-calc-table.table_cats tr td:first-of-type {
+  width: 214px;
+}
+
+._for-nursery .account__brider-gifts {
+  margin-top: 40px;
+}
+
+._for-nursery .account__brider-gifts-title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+._for-nursery .account__brider-gifts-list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+._for-nursery .account__brider-gifts-list-item-pic {
+  margin-right: 20px;
+}
+
+._for-nursery .account__brider-gifts-rules {
+  margin-top: 20px;
+  display: inline-block;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  -webkit-text-decoration-line: underline;
+  text-decoration-line: underline;
+  color: #DC5503;
+}
+
+._for-nursery .account__brider-gifts-rules:hover {
+  text-decoration: none;
+}
+
 ._for-nursery .account__loyalty {
   margin-top: 40px;
 }
@@ -3632,6 +3816,10 @@ button,
 
   ._for-veterinarians .account__recommendations-registration-list-item-link {
     max-width: 100%;
+  }
+
+  ._for-nursery .account__brider-calc-table.table_cats tr td:first-of-type {
+    width: 50%;
   }
 
   .contact-us__container {
