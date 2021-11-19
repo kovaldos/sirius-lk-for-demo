@@ -1549,6 +1549,10 @@ button,
   margin-bottom: 20px;
 }
 
+.account__instructions._hidden {
+  display: none;
+}
+
 .account__content {
   padding-top: 40px;
 }
@@ -1683,17 +1687,45 @@ button,
   background-color: inherit;
 }
 
+._for-manufacturers .account__menu-list:not(:last-child) {
+  border-bottom: 1px solid rgba(1, 127, 214, 0.3);
+}
+
+._for-manufacturers .account__menu-list.border-none {
+  border: none;
+}
+
+._for-manufacturers .account__menu-list-item._is-authorized > .account__menu-link {
+  color: #6a3f24;
+}
+
+._for-manufacturers .account__menu-list-item.current > .account__menu-link {
+  color: #017FD6;
+}
+
+._for-manufacturers .account__menu-link {
+  color: rgba(106, 63, 36, 0.4);
+}
+
 ._for-manufacturers .account__menu-link:not([href]) {
   color: #017FD6;
 }
 
-._for-manufacturers .account__menu-link:hover {
+._for-manufacturers .account__menu-link:hover,
+._for-manufacturers .account__menu-link:focus {
   color: #017FD6 !important;
+  outline: none;
 }
 
 ._for-manufacturers .account__menu-btn {
   color: #017FD6;
   background-color: rgba(0, 191, 255, 0.05);
+}
+
+._for-manufacturers .account__menu-btn:focus,
+._for-manufacturers .account__menu-btn:not(:disabled):hover {
+  color: #017FD6;
+  background-color: rgba(1, 127, 214, 0.1);
 }
 
 ._for-manufacturers .account-form__submit-btn {
@@ -2025,6 +2057,10 @@ button,
 
 ._for-pet-shops .account__content-loyalty-if-exist {
   margin-top: 40px;
+}
+
+._for-pet-shops .account__content-loyalty-if-exist._hidden {
+  display: none;
 }
 
 ._for-pet-shops .account__content-loyalty-discount-title {
@@ -2426,17 +2462,34 @@ button,
   border-bottom: 1px solid rgba(106, 63, 36, 0.3);
 }
 
+._for-veterinarians .account__menu-list.border-none {
+  border: none;
+}
+
 ._for-veterinarians .account__menu-list-item:not(:last-child) {
   margin-bottom: 14px;
+}
+
+._for-veterinarians .account__menu-list-item.current > .account__menu-link {
+  color: #70941b;
 }
 
 ._for-veterinarians .account__menu-link {
   font-size: 14px;
   line-height: 1.43;
-  color: rgba(106, 63, 36, 0.34);
+  color: rgba(106, 63, 36, 0.4);
 }
 
-._for-veterinarians .account__menu-link:not([href]) {
+._for-veterinarians .account__menu-link:hover {
+  color: #70941b !important;
+}
+
+._for-veterinarians .account__menu-list-item._is-authorized > .account__menu-link {
+  color: #6a3f24;
+}
+
+._for-veterinarians .account__menu-list-item._is-authorized > .account__menu-link:not([href]) {
+  font-weight: 600;
   color: #70941b;
 }
 
@@ -3741,7 +3794,7 @@ button,
 
   ._for-manufacturers .account__menu-inner {
     background-color: #fff;
-    padding: 70px 0 0 0;
+    padding: 70px 20px 20px 20px;
   }
 
   ._for-pet-shops .account__content-loyalty-discount-title {
@@ -3827,7 +3880,6 @@ button,
   ._for-veterinarians .account__menu-list:not(:last-child) {
     margin-bottom: 0;
     padding-bottom: 0;
-    border-bottom: none;
   }
 
   ._for-veterinarians .account__menu-list-item.current {
