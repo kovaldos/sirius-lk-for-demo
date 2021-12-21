@@ -1773,6 +1773,10 @@ button,
   margin: 0;
 }
 
+._for-pet-shops .account__content-tabs-item-time-and-place {
+  margin-left: auto;
+}
+
 ._for-pet-shops .account__content-tabs-item-date-and-time {
   font-style: normal;
   font-weight: normal;
