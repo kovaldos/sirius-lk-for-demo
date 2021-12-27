@@ -975,7 +975,7 @@ button,
   display: grid;
   -ms-grid-columns: 360px 1fr;
   grid-template-columns: 360px 1fr;
-  gap: 40px;
+  grid-gap: 40px;
 }
 
 .account__menu {
@@ -1125,6 +1125,14 @@ button,
   text-decoration: none;
 }
 
+.account__content-article-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0 0 1em 0;
+}
+
 .account__content-article-pic {
   margin: 20px 0 10px 0;
   width: 100%;
@@ -1136,6 +1144,10 @@ button,
   max-width: 100%;
   -o-object-fit: cover;
   object-fit: cover;
+}
+
+.account__content-article-text {
+  margin: 1em 0;
 }
 
 .account__content-title-wrapper {
@@ -1802,9 +1814,9 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 ._for-pet-shops .account__content-tabs-item_trainings-btn {
