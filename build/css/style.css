@@ -1110,6 +1110,8 @@ button,
   font-weight: 600;
   font-size: 16px;
   line-height: 20px;
+  margin: 0.9em 0;
+  text-align: left;
 }
 
 .account__content-articles-item-link {
