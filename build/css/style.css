@@ -1267,6 +1267,14 @@ button,
   margin-bottom: 40px;
 }
 
+.account__benefits-more-list-item {
+  list-style: disc;
+}
+
+.account__dates-list-item {
+  list-style: disc;
+}
+
 ._for-manufacturers .account__title::before {
   background-image: -webkit-gradient(linear, left top, right top, color-stop(3.98%, #017FD6), color-stop(99.98%, #23d7e6));
   background-image: linear-gradient(90deg, #017FD6 3.98%, #23d7e6 99.98%);
