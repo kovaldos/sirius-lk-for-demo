@@ -274,10 +274,10 @@
                     <h4 class="account__recommendations-registration-title">Как зарегистрировать рекомендацию:</h4>
                     <ul class="account__recommendations-registration-list"> 
                       <li class="account__recommendations-registration-list-item">
-                        <p class="account__recommendations-registration-list-item-description text-s">1. Скачайте и распечатайте «рекомендацию» для владельца животного на покупку корма со скидкой 15%</p><a class="account__recommendations-registration-list-item-link btn btn--primary" href="#">СКАЧАТЬ</a>
+                        <p class="account__recommendations-registration-list-item-description text-s">1. Скачайте и распечатайте «рекомендацию» для владельца животного на покупку корма со скидкой 15%</p><a class="account__recommendations-registration-list-item-link btn btn--primary" data-modal="recommendations-registration" href="#">СКАЧАТЬ</a>
                       </li>
                       <li class="account__recommendations-registration-list-item">
-                        <p class="account__recommendations-registration-list-item-description text-s">2. Зарегистрируйте «рекомендацию» в личном кабинете</p><a class="account__recommendations-registration-list-item-link btn" href="#">ЗАРЕГИСТРИРОВАТЬ</a>
+                        <p class="account__recommendations-registration-list-item-description text-s">2. Зарегистрируйте «рекомендацию» в личном кабинете</p><a class="account__recommendations-registration-list-item-link btn" data-modal="recommendations-registration" href="#">ЗАРЕГИСТРИРОВАТЬ</a>
                       </li>
                     </ul>
                   </div>
@@ -357,6 +357,65 @@
             </div>
           </div>
           <p class="modal-success-message__message">Ваши данные отправлены на проверку!</p>
+          <button class="modal__close-btn" type="button" aria-label="Закрыть окно"></button>
+        </div>
+      </div>
+    </div>
+    <div class="modal modal--preload modal--recommendations-registration">
+      <div class="modal__wrapper">
+        <div class="modal__overlay"></div>
+        <div class="modal__content">
+          <h3 class="recommendations-registration__title account__content-block-title">Регистрация рекомендации пациенту</h3>
+          <div class="account__form recommendations__form" data-validate data-callback="recommendationsForm">
+            <form>
+              <div class="custom-select custom-select--placeholder account-form__select" data-select="" data-validate-type="select"><span class="custom-select__label">Пациент</span><span class="custom-select__placeholder">Выберите вид животного</span>
+                <button class="custom-select__button" type="button" aria-label="Выберите вид животного"><span class="custom-select__text"></span><span class="custom-select__icon"></span></button>
+                <ul class="custom-select__list" role="listbox">
+                  <li class="custom-select__item" tabindex="0" data-select-value="Кошка" aria-selected="false" role="option">Кошка</li>
+                  <li class="custom-select__item" tabindex="0" data-select-value="Собака" aria-selected="false" role="option">Собака</li>
+                </ul>
+              </div>
+              <div class="custom-input account-form__input" data-validate-type="text">
+                <label><span class="custom-input__label">Хозяин</span>
+                  <input type="text" placeholder="Укажите имя и фамилию">
+                </label>
+              </div>
+              <div class="custom-input account-form__input" data-validate-type="text">
+                <label><span class="custom-input__label">Кличка питомца</span>
+                  <input type="text" placeholder="Укажите кличку питомца">
+                </label>
+              </div>
+              <div class="custom-input account-form__input" data-validate-type="text">
+                <label><span class="custom-input__label">Возраст</span>
+                  <input type="text" placeholder="Укажите возраст">
+                </label>
+              </div>
+              <div class="custom-input account-form__input" data-validate-type="text">
+                <label><span class="custom-input__label">Порода</span>
+                  <input type="text" placeholder="Укажите породу">
+                </label>
+              </div>
+              <div class="custom-input account-form__input" data-validate-type="text">
+                <label><span class="custom-input__label">Диагноз</span>
+                  <input type="text" placeholder="Укажите диагноз">
+                </label>
+              </div>
+              <div class="custom-select custom-select--placeholder account-form__select" data-select="" data-validate-type="select"><span class="custom-select__label">Рекомендован корм</span><span class="custom-select__placeholder">Выберите корм из списка</span>
+                <button class="custom-select__button" type="button" aria-label="Выберите корм из списка"><span class="custom-select__text"></span><span class="custom-select__icon"></span></button>
+                <ul class="custom-select__list" role="listbox">
+                  <li class="custom-select__item" tabindex="0" data-select-value="SIRIUS для щенков и молодых собак.  Ягнёнок и рис" aria-selected="false" role="option">SIRIUS для щенков и молодых собак.  Ягнёнок и рис</li>
+                  <li class="custom-select__item" tabindex="0" data-select-value="SIRIUS для взрослых собак. Говядина с овощами" aria-selected="false" role="option">SIRIUS для взрослых собак. Говядина с овощами</li>
+                  <li class="custom-select__item" tabindex="0" data-select-value="SIRIUS для взрослых собак. Мясной рацион" aria-selected="false" role="option">SIRIUS для взрослых собак. Мясной рацион</li>
+                  <li class="custom-select__item" tabindex="0" data-select-value="SIRIUS для взрослых собак. Ягнёнок и рис" aria-selected="false" role="option">SIRIUS для взрослых собак. Ягнёнок и рис</li>
+                  <li class="custom-select__item" tabindex="0" data-select-value="SIRIUS для собак малых пород. Индейка и рис" aria-selected="false" role="option">SIRIUS для собак малых пород. Индейка и рис</li>
+                  <li class="custom-select__item" tabindex="0" data-select-value="SIRIUS для собак средних пород. Индейка и Утка с овощами" aria-selected="false" role="option">SIRIUS для собак средних пород. Индейка и Утка с овощами</li>
+                  <li class="custom-select__item" tabindex="0" data-select-value="SIRIUS для собак крупных пород. Индейка с овощами" aria-selected="false" role="option">SIRIUS для собак крупных пород. Индейка с овощами</li>
+                  <li class="custom-select__item" tabindex="0" data-select-value="SIRIUS для активных собак. 3 мяса с овощами" aria-selected="false" role="option">SIRIUS для активных собак. 3 мяса с овощами</li>
+                </ul>
+              </div>
+              <input class="btn account-form__submit-btn recommendations-form__submit-btn" type="submit" value="ЗАРЕГИСТРИРОВАТЬ">
+            </form>
+          </div>
           <button class="modal__close-btn" type="button" aria-label="Закрыть окно"></button>
         </div>
       </div>
