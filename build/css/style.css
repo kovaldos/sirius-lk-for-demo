@@ -597,6 +597,14 @@ button,
   background-color: #ede4de;
 }
 
+.custom-select__item._hidden {
+  display: none;
+}
+
+.custom-select__item._show {
+  display: block;
+}
+
 .custom-select__error {
   position: absolute;
   bottom: 0;

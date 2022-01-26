@@ -407,11 +407,11 @@
           <div class="account__notification recommendations__notification"></div>
           <div class="account__form recommendations__form" data-validate data-callback="accountForm">
             <form>
-              <div class="custom-select custom-select--placeholder account-form__select" data-select="" data-validate-type="select"><span class="custom-select__label">Пациент</span><span class="custom-select__placeholder">Выберите вид животного</span>
+              <div class="custom-select custom-select--placeholder account-form__select pet-type" data-select="" data-validate-type="select"><span class="custom-select__label">Пациент</span><span class="custom-select__placeholder">Выберите вид животного</span>
                 <button class="custom-select__button" type="button" aria-label="Выберите вид животного"><span class="custom-select__text"></span><span class="custom-select__icon"></span></button>
                 <ul class="custom-select__list" role="listbox">
-                  <li class="custom-select__item" tabindex="0" data-select-value="Кошка" aria-selected="false" role="option">Кошка</li>
-                  <li class="custom-select__item" tabindex="0" data-select-value="Собака" aria-selected="false" role="option">Собака</li>
+                  <li class="custom-select__item" tabindex="0" data-select-value="Кошка" aria-selected="false" role="option" data-value="cat">Кошка</li>
+                  <li class="custom-select__item" tabindex="0" data-select-value="Собака" aria-selected="false" role="option" data-value="dog">Собака</li>
                 </ul>
               </div>
               <div class="custom-input account-form__input" data-validate-type="text">
@@ -439,23 +439,23 @@
                   <input type="text" placeholder="Укажите диагноз">
                 </label>
               </div>
-              <div class="custom-select custom-select--placeholder account-form__select" data-select="" data-validate-type="select"><span class="custom-select__label">Рекомендован корм</span><span class="custom-select__placeholder">Выберите корм из списка</span>
+              <div class="custom-select custom-select--placeholder account-form__select rec-food" data-select="" data-validate-type="select"><span class="custom-select__label">Рекомендован корм</span><span class="custom-select__placeholder">Выберите корм из списка</span>
                 <button class="custom-select__button" type="button" aria-label="Выберите корм из списка"><span class="custom-select__text"></span><span class="custom-select__icon"></span></button>
                 <ul class="custom-select__list" role="listbox">
-                  <li class="custom-select__item" tabindex="0" data-select-value="SIRIUS для щенков и молодых собак.  Ягнёнок и рис" aria-selected="false" role="option">SIRIUS для щенков и молодых собак.  Ягнёнок и рис</li>
-                  <li class="custom-select__item" tabindex="0" data-select-value="SIRIUS для взрослых собак. Говядина с овощами" aria-selected="false" role="option">SIRIUS для взрослых собак. Говядина с овощами</li>
-                  <li class="custom-select__item" tabindex="0" data-select-value="SIRIUS для взрослых собак. Мясной рацион" aria-selected="false" role="option">SIRIUS для взрослых собак. Мясной рацион</li>
-                  <li class="custom-select__item" tabindex="0" data-select-value="SIRIUS для взрослых собак. Ягнёнок и рис" aria-selected="false" role="option">SIRIUS для взрослых собак. Ягнёнок и рис</li>
-                  <li class="custom-select__item" tabindex="0" data-select-value="SIRIUS для собак малых пород. Индейка и рис" aria-selected="false" role="option">SIRIUS для собак малых пород. Индейка и рис</li>
-                  <li class="custom-select__item" tabindex="0" data-select-value="SIRIUS для собак средних пород. Индейка и Утка с овощами" aria-selected="false" role="option">SIRIUS для собак средних пород. Индейка и Утка с овощами</li>
-                  <li class="custom-select__item" tabindex="0" data-select-value="SIRIUS для собак крупных пород. Индейка с овощами" aria-selected="false" role="option">SIRIUS для собак крупных пород. Индейка с овощами</li>
-                  <li class="custom-select__item" tabindex="0" data-select-value="SIRIUS для активных собак. 3 мяса с овощами" aria-selected="false" role="option">SIRIUS для активных собак. 3 мяса с овощами</li>
-                  <li class="custom-select__item" tabindex="0" data-select-value="SIRIUS для котят. Курица и Индейка" aria-selected="false" role="option">SIRIUS для котят. Курица и Индейка</li>
-                  <li class="custom-select__item" tabindex="0" data-select-value="SIRIUS для взрослых кошек. Лосось и рис" aria-selected="false" role="option">SIRIUS для взрослых кошек. Лосось и рис</li>
-                  <li class="custom-select__item" tabindex="0" data-select-value="SIRIUS для взрослых кошек. Мясной рацион" aria-selected="false" role="option">SIRIUS для взрослых кошек. Мясной рацион</li>
-                  <li class="custom-select__item" tabindex="0" data-select-value="SIRIUS для кошек с чувствительным пищеварением. Индейка с черникой" aria-selected="false" role="option">SIRIUS для кошек с чувствительным пищеварением. Индейка с черникой</li>
-                  <li class="custom-select__item" tabindex="0" data-select-value="SIRIUS для стерилизованных кошек. Индейка и Курица" aria-selected="false" role="option">SIRIUS для стерилизованных кошек. Индейка и Курица</li>
-                  <li class="custom-select__item" tabindex="0" data-select-value="SIRIUS для стерилизованных кошек. Утка и клюква" aria-selected="false" role="option">SIRIUS для стерилизованных кошек. Утка и клюква</li>
+                  <li class="custom-select__item" tabindex="0" data-select-value="SIRIUS для щенков и молодых собак.  Ягнёнок и рис" aria-selected="false" role="option" data-value="for-dogs">SIRIUS для щенков и молодых собак.  Ягнёнок и рис</li>
+                  <li class="custom-select__item" tabindex="0" data-select-value="SIRIUS для взрослых собак. Говядина с овощами" aria-selected="false" role="option" data-value="for-dogs">SIRIUS для взрослых собак. Говядина с овощами</li>
+                  <li class="custom-select__item" tabindex="0" data-select-value="SIRIUS для взрослых собак. Мясной рацион" aria-selected="false" role="option" data-value="for-dogs">SIRIUS для взрослых собак. Мясной рацион</li>
+                  <li class="custom-select__item" tabindex="0" data-select-value="SIRIUS для взрослых собак. Ягнёнок и рис" aria-selected="false" role="option" data-value="for-dogs">SIRIUS для взрослых собак. Ягнёнок и рис</li>
+                  <li class="custom-select__item" tabindex="0" data-select-value="SIRIUS для собак малых пород. Индейка и рис" aria-selected="false" role="option" data-value="for-dogs">SIRIUS для собак малых пород. Индейка и рис</li>
+                  <li class="custom-select__item" tabindex="0" data-select-value="SIRIUS для собак средних пород. Индейка и Утка с овощами" aria-selected="false" role="option" data-value="for-dogs">SIRIUS для собак средних пород. Индейка и Утка с овощами</li>
+                  <li class="custom-select__item" tabindex="0" data-select-value="SIRIUS для собак крупных пород. Индейка с овощами" aria-selected="false" role="option" data-value="for-dogs">SIRIUS для собак крупных пород. Индейка с овощами</li>
+                  <li class="custom-select__item" tabindex="0" data-select-value="SIRIUS для активных собак. 3 мяса с овощами" aria-selected="false" role="option" data-value="for-dogs">SIRIUS для активных собак. 3 мяса с овощами</li>
+                  <li class="custom-select__item" tabindex="0" data-select-value="SIRIUS для котят. Курица и Индейка" aria-selected="false" role="option" data-value="for-cats">SIRIUS для котят. Курица и Индейка</li>
+                  <li class="custom-select__item" tabindex="0" data-select-value="SIRIUS для взрослых кошек. Лосось и рис" aria-selected="false" role="option" data-value="for-cats">SIRIUS для взрослых кошек. Лосось и рис</li>
+                  <li class="custom-select__item" tabindex="0" data-select-value="SIRIUS для взрослых кошек. Мясной рацион" aria-selected="false" role="option" data-value="for-cats">SIRIUS для взрослых кошек. Мясной рацион</li>
+                  <li class="custom-select__item" tabindex="0" data-select-value="SIRIUS для кошек с чувствительным пищеварением. Индейка с черникой" aria-selected="false" role="option" data-value="for-cats">SIRIUS для кошек с чувствительным пищеварением. Индейка с черникой</li>
+                  <li class="custom-select__item" tabindex="0" data-select-value="SIRIUS для стерилизованных кошек. Индейка и Курица" aria-selected="false" role="option" data-value="for-cats">SIRIUS для стерилизованных кошек. Индейка и Курица</li>
+                  <li class="custom-select__item" tabindex="0" data-select-value="SIRIUS для стерилизованных кошек. Утка и клюква" aria-selected="false" role="option" data-value="for-cats">SIRIUS для стерилизованных кошек. Утка и клюква</li>
                 </ul>
               </div>
               <input class="btn account-form__submit-btn recommendations-form__submit-btn" type="submit" value="ЗАРЕГИСТРИРОВАТЬ">
