@@ -300,6 +300,98 @@
         </section>
       </main>
     </div>
+    <div class="modal modal--preload modal--log-in modal--active">
+      <div class="modal__wrapper">
+        <div class="modal__overlay"></div>
+        <div class="modal__content">
+          <div class="log-in">
+            <div class="log-in__header">
+              <nav class="log-in__tabs-nav">
+                <div class="log-in__tabs-navbar"><a class="log-in__tabs-switch tabs__link" id="link01" href="#sign-in">Авторизация</a><a class="log-in__tabs-switch tabs__link" id="link02" href="#sign-up">Регистрация</a><a class="log-in__tabs-switch tabs__link" id="link03" href="#forgot">Забыли пароль?</a></div>
+              </nav>
+            </div>
+            <div class="log-in__wrapper">
+              <div class="log-in__tabs-block tabs__item" id="sign-in">
+                <div class="account__notification"></div>
+                <div class="account__form log-in__form" data-validate data-callback="accountForm">
+                  <form>
+                    <div class="custom-input account-form__input" data-validate-type="text">
+                      <label><span class="custom-input__label">email</span>
+                        <input type="text" placeholder="Email">
+                      </label>
+                    </div>
+                    <div class="custom-input account-form__input" data-validate-type="password">
+                      <label><span class="custom-input__label">Пароль</span>
+                        <input type="text" placeholder="Пароль">
+                      </label>
+                    </div>
+                    <input class="btn account-form__submit-btn log-in__btn" type="submit" value="Войти">
+                  </form>
+                </div>
+                <div class="log-in__links"><a class="log-in__link tabs__link" href="#forgot">Забыли пароль?</a><a class="log-in__link tabs__link" href="#sign-up">Зарегистрироваться</a></div>
+              </div>
+              <div class="log-in__tabs-block tabs__item" id="sign-up">
+                <div class="account__notification"></div>
+                <div class="account__form log-in__form" data-validate data-callback="accountForm">
+                  <form>
+                    <div class="custom-select custom-select--placeholder account-form__select account-type" data-select="" data-validate-type="select"><span class="custom-select__placeholder">Тип учетной записи*</span>
+                      <button class="custom-select__button" type="button" aria-label="Тип учетной записи*"><span class="custom-select__text"></span><span class="custom-select__icon"></span></button>
+                      <ul class="custom-select__list" role="listbox">
+                        <li class="custom-select__item" tabindex="0" data-select-value="Ветеринарный врач" aria-selected="false" role="option">Ветеринарный врач</li>
+                        <li class="custom-select__item" tabindex="0" data-select-value="Партнер" aria-selected="false" role="option">Партнер</li>
+                        <li class="custom-select__item" tabindex="0" data-select-value="Зоомагазин" aria-selected="false" role="option">Зоомагазин</li>
+                        <li class="custom-select__item" tabindex="0" data-select-value="Питомник/Заводчик" aria-selected="false" role="option">Питомник/Заводчик</li>
+                        <li class="custom-select__item" tabindex="0" data-select-value="Производитель СТМ" aria-selected="false" role="option">Производитель СТМ</li>
+                      </ul>
+                    </div>
+                    <div class="custom-input account-form__input" data-validate-type="text">
+                      <label>
+                        <input type="text" placeholder="Фамилия*">
+                      </label>
+                    </div>
+                    <div class="custom-input account-form__input" data-validate-type="text">
+                      <label>
+                        <input type="text" placeholder="Имя*">
+                      </label>
+                    </div>
+                    <div class="custom-input account-form__input">
+                      <label>
+                        <input type="text" placeholder="Название компании">
+                      </label>
+                    </div>
+                    <div class="custom-input account-form__input">
+                      <label>
+                        <input type="text" placeholder="Регион">
+                      </label>
+                    </div>
+                    <div class="custom-input account-form__input" data-validate-type="tel">
+                      <label>
+                        <input type="text" placeholder="Телефон*">
+                      </label>
+                    </div>
+                    <div class="custom-input account-form__input" data-validate-type="email">
+                      <label>
+                        <input type="text" placeholder="Email*">
+                      </label>
+                    </div>
+                    <div class="log-in__row">
+                      <div class="custom-toggle custom-toggle--checkbox account-form__checkbox log-in__checkbox" data-validate-type="checkbox">
+                        <input type="checkbox" name="account-form-agreement" id="account-form-agreement" checked>
+                        <label for="account-form-agreement"><span>Согласие на обработку персональных данных</span></label>
+                      </div>
+                      <div class="log-in__obligatory"><span class="log-in__obligatory-span">* Обязательное поле</span></div>
+                    </div>
+                    <input class="btn account-form__submit-btn log-in__btn" type="submit" value="стать партнером">
+                  </form>
+                </div>
+              </div>
+              <div class="log-in__tabs-block tabs__item" id="forgot">456</div>
+            </div>
+          </div>
+          <button class="modal__close-btn" type="button" aria-label="Закрыть окно"></button>
+        </div>
+      </div>
+    </div>
     <div class="modal modal--preload modal--success-message">
       <div class="modal__wrapper">
         <div class="modal__overlay"></div>
@@ -311,7 +403,95 @@
               </svg>
             </div>
           </div>
-          <p class="modal-success-message__message">Мероприятие создано!</p>
+          <p class="modal-success-message__message">Ваши данные отправлены на проверку!</p>
+          <button class="modal__close-btn" type="button" aria-label="Закрыть окно"></button>
+        </div>
+      </div>
+    </div>
+    <div class="modal modal--preload modal--recommendations-registration">
+      <div class="modal__wrapper">
+        <div class="modal__overlay"></div>
+        <div class="modal__content">
+          <h3 class="recommendations-registration__title account__content-block-title">Регистрация рекомендации пациенту</h3>
+          <div class="account__notification recommendations__notification"></div>
+          <div class="account__form recommendations__form" data-validate data-callback="accountForm">
+            <form>
+              <div class="custom-select custom-select--placeholder account-form__select pet-type" data-select="" data-validate-type="select"><span class="custom-select__label">Пациент</span><span class="custom-select__placeholder">Выберите вид животного</span>
+                <button class="custom-select__button" type="button" aria-label="Выберите вид животного"><span class="custom-select__text"></span><span class="custom-select__icon"></span></button>
+                <ul class="custom-select__list" role="listbox">
+                  <li class="custom-select__item" tabindex="0" data-select-value="Кошка" aria-selected="false" role="option" data-value="cat">Кошка</li>
+                  <li class="custom-select__item" tabindex="0" data-select-value="Собака" aria-selected="false" role="option" data-value="dog">Собака</li>
+                </ul>
+              </div>
+              <div class="custom-input account-form__input" data-validate-type="text">
+                <label><span class="custom-input__label">Хозяин</span>
+                  <input type="text" placeholder="Укажите имя и фамилию">
+                </label>
+              </div>
+              <div class="custom-input account-form__input" data-validate-type="text">
+                <label><span class="custom-input__label">Кличка питомца</span>
+                  <input type="text" placeholder="Укажите кличку питомца">
+                </label>
+              </div>
+              <div class="custom-input account-form__input" data-validate-type="text">
+                <label><span class="custom-input__label">Возраст</span>
+                  <input type="text" placeholder="Укажите возраст">
+                </label>
+              </div>
+              <div class="custom-input account-form__input" data-validate-type="text">
+                <label><span class="custom-input__label">Порода</span>
+                  <input type="text" placeholder="Укажите породу">
+                </label>
+              </div>
+              <div class="custom-input account-form__input" data-validate-type="text">
+                <label><span class="custom-input__label">Диагноз</span>
+                  <input type="text" placeholder="Укажите диагноз">
+                </label>
+              </div>
+              <div class="custom-select custom-select--placeholder account-form__select rec-food" data-select="" data-validate-type="select"><span class="custom-select__label">Рекомендован корм</span><span class="custom-select__placeholder">Выберите корм из списка</span>
+                <button class="custom-select__button" type="button" aria-label="Выберите корм из списка"><span class="custom-select__text"></span><span class="custom-select__icon"></span></button>
+                <ul class="custom-select__list" role="listbox">
+                  <li class="custom-select__item" tabindex="0" data-select-value="SIRIUS для щенков и молодых собак.  Ягнёнок и рис" aria-selected="false" role="option" data-value="for-dogs">SIRIUS для щенков и молодых собак.  Ягнёнок и рис</li>
+                  <li class="custom-select__item" tabindex="0" data-select-value="SIRIUS для взрослых собак. Говядина с овощами" aria-selected="false" role="option" data-value="for-dogs">SIRIUS для взрослых собак. Говядина с овощами</li>
+                  <li class="custom-select__item" tabindex="0" data-select-value="SIRIUS для взрослых собак. Мясной рацион" aria-selected="false" role="option" data-value="for-dogs">SIRIUS для взрослых собак. Мясной рацион</li>
+                  <li class="custom-select__item" tabindex="0" data-select-value="SIRIUS для взрослых собак. Ягнёнок и рис" aria-selected="false" role="option" data-value="for-dogs">SIRIUS для взрослых собак. Ягнёнок и рис</li>
+                  <li class="custom-select__item" tabindex="0" data-select-value="SIRIUS для собак малых пород. Индейка и рис" aria-selected="false" role="option" data-value="for-dogs">SIRIUS для собак малых пород. Индейка и рис</li>
+                  <li class="custom-select__item" tabindex="0" data-select-value="SIRIUS для собак средних пород. Индейка и Утка с овощами" aria-selected="false" role="option" data-value="for-dogs">SIRIUS для собак средних пород. Индейка и Утка с овощами</li>
+                  <li class="custom-select__item" tabindex="0" data-select-value="SIRIUS для собак крупных пород. Индейка с овощами" aria-selected="false" role="option" data-value="for-dogs">SIRIUS для собак крупных пород. Индейка с овощами</li>
+                  <li class="custom-select__item" tabindex="0" data-select-value="SIRIUS для активных собак. 3 мяса с овощами" aria-selected="false" role="option" data-value="for-dogs">SIRIUS для активных собак. 3 мяса с овощами</li>
+                  <li class="custom-select__item" tabindex="0" data-select-value="SIRIUS для котят. Курица и Индейка" aria-selected="false" role="option" data-value="for-cats">SIRIUS для котят. Курица и Индейка</li>
+                  <li class="custom-select__item" tabindex="0" data-select-value="SIRIUS для взрослых кошек. Лосось и рис" aria-selected="false" role="option" data-value="for-cats">SIRIUS для взрослых кошек. Лосось и рис</li>
+                  <li class="custom-select__item" tabindex="0" data-select-value="SIRIUS для взрослых кошек. Мясной рацион" aria-selected="false" role="option" data-value="for-cats">SIRIUS для взрослых кошек. Мясной рацион</li>
+                  <li class="custom-select__item" tabindex="0" data-select-value="SIRIUS для кошек с чувствительным пищеварением. Индейка с черникой" aria-selected="false" role="option" data-value="for-cats">SIRIUS для кошек с чувствительным пищеварением. Индейка с черникой</li>
+                  <li class="custom-select__item" tabindex="0" data-select-value="SIRIUS для стерилизованных кошек. Индейка и Курица" aria-selected="false" role="option" data-value="for-cats">SIRIUS для стерилизованных кошек. Индейка и Курица</li>
+                  <li class="custom-select__item" tabindex="0" data-select-value="SIRIUS для стерилизованных кошек. Утка и клюква" aria-selected="false" role="option" data-value="for-cats">SIRIUS для стерилизованных кошек. Утка и клюква</li>
+                </ul>
+              </div>
+              <input class="btn account-form__submit-btn recommendations-form__submit-btn" type="submit" value="ЗАРЕГИСТРИРОВАТЬ">
+            </form>
+          </div>
+          <button class="modal__close-btn" type="button" aria-label="Закрыть окно"></button>
+        </div>
+      </div>
+    </div>
+    <div class="modal modal--preload modal--program-rules">
+      <div class="modal__wrapper">
+        <div class="modal__overlay"></div>
+        <div class="modal__content">
+          <h3 class="program-rules__title account__content-block-title">Правила участия в программе</h3>
+          <ol class="program-rules__list">
+            <li class="program-rules__list-item">Участниками Программы могут быть только практикующие ветеринарные врачи, получившие профильное ветеринарное образование и предоставившие скан-копию соответствующего диплома при регистрации на Сайте Программы.</li>
+            <li class="program-rules__list-item">Участниками Программы не могут быть представители Организатора и Дистрибьютора и аффилированные с ними лица. Участниками Программы могут быть только Лица, соответствующие требованиям п.1. настоящих Правил (далее по тексту - Участник).</li>
+            <li class="program-rules__list-item">Участники имеют права и несут обязанности, установленные действующим законодательством Российской Федерации, а также настоящими Правилами. Лицо может быть исключено из числа Участников по усмотрению Организатора в одностороннем порядке и без объяснения причин в случае, если:
+              <ul class="program-rules__sub-list">
+                <li class="program-rules__sub-list-item">Лицо не соответствует требованиям, предусмотренным настоящими Правилами.</li>
+                <li class="program-rules__sub-list-item">Участник нарушил какие-либо положения Правил.</li>
+                <li class="program-rules__sub-list-item">Участник проявил неуважение к другим Участникам Программы, представителям Заказчика или Организатора, товарному знаку SIRIUS.</li>
+              </ul>
+            </li>
+            <li class="program-rules__list-item">Участник обязан предоставить о себе достоверные данные при заполнении профиля личного кабинета.</li>
+            <li class="program-rules__list-item">Участник обязан ознакомиться с настоящими Правилами. Участие в Программе означает, что Участник согласен с ними и принимает на себя права и обязанности, предусмотренные настоящими Правилами.</li>
+          </ol>
           <button class="modal__close-btn" type="button" aria-label="Закрыть окно"></button>
         </div>
       </div>

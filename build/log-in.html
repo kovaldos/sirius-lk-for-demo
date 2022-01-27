@@ -294,6 +294,98 @@
         </section>
       </main>
     </div>
+    <div class="modal modal--preload modal--log-in modal--active">
+      <div class="modal__wrapper">
+        <div class="modal__overlay"></div>
+        <div class="modal__content">
+          <div class="log-in">
+            <div class="log-in__header">
+              <nav class="log-in__tabs-nav">
+                <div class="log-in__tabs-navbar"><a class="log-in__tabs-switch tabs__link" id="link01" href="#sign-in">Авторизация</a><a class="log-in__tabs-switch tabs__link" id="link02" href="#sign-up">Регистрация</a><a class="log-in__tabs-switch tabs__link" id="link03" href="#forgot">Забыли пароль?</a></div>
+              </nav>
+            </div>
+            <div class="log-in__wrapper">
+              <div class="log-in__tabs-block tabs__item" id="sign-in">
+                <div class="account__notification"></div>
+                <div class="account__form log-in__form" data-validate data-callback="accountForm">
+                  <form>
+                    <div class="custom-input account-form__input" data-validate-type="text">
+                      <label><span class="custom-input__label">email</span>
+                        <input type="text" placeholder="Email">
+                      </label>
+                    </div>
+                    <div class="custom-input account-form__input" data-validate-type="password">
+                      <label><span class="custom-input__label">Пароль</span>
+                        <input type="text" placeholder="Пароль">
+                      </label>
+                    </div>
+                    <input class="btn account-form__submit-btn log-in__btn" type="submit" value="Войти">
+                  </form>
+                </div>
+                <div class="log-in__links"><a class="log-in__link tabs__link" href="#forgot">Забыли пароль?</a><a class="log-in__link tabs__link" href="#sign-up">Зарегистрироваться</a></div>
+              </div>
+              <div class="log-in__tabs-block tabs__item" id="sign-up">
+                <div class="account__notification"></div>
+                <div class="account__form log-in__form" data-validate data-callback="accountForm">
+                  <form>
+                    <div class="custom-select custom-select--placeholder account-form__select account-type" data-select="" data-validate-type="select"><span class="custom-select__placeholder">Тип учетной записи*</span>
+                      <button class="custom-select__button" type="button" aria-label="Тип учетной записи*"><span class="custom-select__text"></span><span class="custom-select__icon"></span></button>
+                      <ul class="custom-select__list" role="listbox">
+                        <li class="custom-select__item" tabindex="0" data-select-value="Ветеринарный врач" aria-selected="false" role="option">Ветеринарный врач</li>
+                        <li class="custom-select__item" tabindex="0" data-select-value="Партнер" aria-selected="false" role="option">Партнер</li>
+                        <li class="custom-select__item" tabindex="0" data-select-value="Зоомагазин" aria-selected="false" role="option">Зоомагазин</li>
+                        <li class="custom-select__item" tabindex="0" data-select-value="Питомник/Заводчик" aria-selected="false" role="option">Питомник/Заводчик</li>
+                        <li class="custom-select__item" tabindex="0" data-select-value="Производитель СТМ" aria-selected="false" role="option">Производитель СТМ</li>
+                      </ul>
+                    </div>
+                    <div class="custom-input account-form__input" data-validate-type="text">
+                      <label>
+                        <input type="text" placeholder="Фамилия*">
+                      </label>
+                    </div>
+                    <div class="custom-input account-form__input" data-validate-type="text">
+                      <label>
+                        <input type="text" placeholder="Имя*">
+                      </label>
+                    </div>
+                    <div class="custom-input account-form__input">
+                      <label>
+                        <input type="text" placeholder="Название компании">
+                      </label>
+                    </div>
+                    <div class="custom-input account-form__input">
+                      <label>
+                        <input type="text" placeholder="Регион">
+                      </label>
+                    </div>
+                    <div class="custom-input account-form__input" data-validate-type="tel">
+                      <label>
+                        <input type="text" placeholder="Телефон*">
+                      </label>
+                    </div>
+                    <div class="custom-input account-form__input" data-validate-type="email">
+                      <label>
+                        <input type="text" placeholder="Email*">
+                      </label>
+                    </div>
+                    <div class="log-in__row">
+                      <div class="custom-toggle custom-toggle--checkbox account-form__checkbox log-in__checkbox" data-validate-type="checkbox">
+                        <input type="checkbox" name="account-form-agreement" id="account-form-agreement" checked>
+                        <label for="account-form-agreement"><span>Согласие на обработку персональных данных</span></label>
+                      </div>
+                      <div class="log-in__obligatory"><span class="log-in__obligatory-span">* Обязательное поле</span></div>
+                    </div>
+                    <input class="btn account-form__submit-btn log-in__btn" type="submit" value="стать партнером">
+                  </form>
+                </div>
+              </div>
+              <div class="log-in__tabs-block tabs__item" id="forgot">456</div>
+            </div>
+          </div>
+          <button class="modal__close-btn" type="button" aria-label="Закрыть окно"></button>
+        </div>
+      </div>
+    </div>
     <div class="modal modal--preload modal--success-message">
       <div class="modal__wrapper">
         <div class="modal__overlay"></div>
