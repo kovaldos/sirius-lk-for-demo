@@ -297,8 +297,7 @@
             </div>
             <div class="log-in__wrapper">
               <div class="log-in__tabs-block tabs__item" id="sign-in">
-                <div class="account__notification"></div>
-                <div class="account__form log-in__form" data-validate data-callback="accountForm">
+                <div class="account__form log-in__form sign-in__form" data-validate data-callback="accountForm">
                   <form>
                     <div class="custom-input account-form__input" data-validate-type="text">
                       <label><span class="custom-input__label">email</span>
@@ -314,10 +313,10 @@
                   </form>
                 </div>
                 <div class="log-in__links"><a class="log-in__link tabs__link" href="#forgot">Забыли пароль?</a><a class="log-in__link tabs__link" href="#sign-up">Зарегистрироваться</a></div>
+                <div class="log-in__form-error"><span>Вход не выполнен. Введен неверный логин или пароль!</span></div>
               </div>
               <div class="log-in__tabs-block tabs__item" id="sign-up">
-                <div class="account__notification"></div>
-                <div class="account__form log-in__form" data-validate data-callback="accountForm">
+                <div class="account__form log-in__form sign-up__form" data-validate data-callback="accountForm">
                   <form>
                     <div class="custom-select custom-select--placeholder account-form__select account-type" data-select="" data-validate-type="select"><span class="custom-select__placeholder">Тип учетной записи*</span>
                       <button class="custom-select__button" type="button" aria-label="Тип учетной записи*"><span class="custom-select__text"></span><span class="custom-select__icon"></span></button>
@@ -364,13 +363,27 @@
                         <input type="checkbox" name="account-form-agreement" id="account-form-agreement" checked>
                         <label for="account-form-agreement"><span>Согласие на обработку персональных данных</span></label>
                       </div>
-                      <div class="log-in__obligatory"><span class="log-in__obligatory-span">* Обязательное поле</span></div>
+                      <div class="log-in__obligatory account__notification"><span class="log-in__obligatory-span">* Обязательное поле</span></div>
                     </div>
                     <input class="btn account-form__submit-btn log-in__btn" type="submit" value="стать партнером">
                   </form>
+                </div><a class="log-in__link tabs__link" href="#sign-in">Войти</a>
+              </div>
+              <div class="log-in__tabs-block tabs__item" id="forgot">
+                <div class="account__form log-in__form forgot__form" data-validate data-callback="accountForm">
+                  <h3 class="account__form-title forgot__title">Забыли пароль?</h3>
+                  <p class="forgot__text">Пожалуйста, укажите Ваш email с которого была произведена регистрация.</p>
+                  <p class="forgot__text">На регистрационный email придет письмо с паролем.</p>
+                  <form>
+                    <div class="custom-input account-form__input" data-validate-type="email">
+                      <label>
+                        <input type="text" placeholder="Email*">
+                      </label>
+                    </div>
+                    <input class="btn account-form__submit-btn log-in__btn" type="submit" value="восстановить">
+                  </form>
                 </div>
               </div>
-              <div class="log-in__tabs-block tabs__item" id="forgot">456</div>
             </div>
           </div>
           <button class="modal__close-btn" type="button" aria-label="Закрыть окно"></button>

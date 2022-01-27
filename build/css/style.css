@@ -767,7 +767,7 @@ button,
 .modal--log-in .modal__content {
   width: 100%;
   max-width: 580px;
-  min-height: 600px;
+  min-height: 640px;
   padding: 0;
   background: #f5f1ee;
   -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
@@ -839,7 +839,7 @@ button,
 }
 
 .log-in__wrapper {
-  padding: 20px 40px 0;
+  padding: 20px 40px 40px 40px;
 }
 
 .log-in__tabs-block {
@@ -936,6 +936,23 @@ button,
   width: 100% !important;
 }
 
+.log-in__form-error {
+  margin: 35px 0 0 0;
+  color: #ed1b33;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.log-in__form-error._active {
+  opacity: 1;
+  visibility: visible;
+}
+
 .log-in__link {
   display: block;
   font-style: normal;
@@ -975,12 +992,41 @@ button,
 
 .log-in__obligatory {
   -webkit-box-flex: 0;
-  -ms-flex: 0 0 135px;
-  flex: 0 0 135px;
+  -ms-flex: 0 0 155px;
+  flex: 0 0 155px;
 }
 
 .log-in__obligatory.is-invalid .log-in__obligatory-span {
   color: #ed1b33;
+}
+
+.log-in__obligatory.account__notification {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.log-in__obligatory.account__notification span {
+  padding-top: 0;
+}
+
+.log-in .forgot__title,
+.log-in .forgot__text {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: #6a3f24;
+  margin: 0 0 20px;
+}
+
+.log-in .forgot__text {
+  font-weight: normal;
+  margin: 0;
+}
+
+.log-in .forgot__form form {
+  margin: 40px 0 0 0;
 }
 
 .log-in__btn {
@@ -3669,8 +3715,12 @@ button,
     flex-wrap: wrap-reverse;
   }
 
+  .log-in__checkbox {
+    margin-top: 15px;
+  }
+
   .log-in__obligatory {
-    margin: 20px 0 0 0;
+    margin: 0;
   }
 
   .modal__wrapper {
