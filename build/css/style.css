@@ -3692,7 +3692,7 @@ button,
 }
 
 .simplebar-track.simplebar-horizontal::after {
-  content: url(/img/sprite/icon-triangle-left.svg);
+  content: url(../img/sprite/icon-triangle-left.svg);
   position: absolute;
   left: 0;
   right: auto;
@@ -3702,7 +3702,7 @@ button,
 }
 
 .simplebar-track.simplebar-horizontal::before {
-  content: url(/img/sprite/icon-triangle-right.svg);
+  content: url(../img/sprite/icon-triangle-right.svg);
   position: absolute;
   left: auto;
   right: 0;
