@@ -1989,7 +1989,7 @@ button,
 }
 
 ._for-manufacturers .account__content-table-title {
-  width: inherit;
+  width: 100%;
   background-color: #017FD6;
   padding: 10px;
   height: 40px;
@@ -2005,35 +2005,11 @@ button,
 }
 
 ._for-manufacturers .account__content-table-title.table-finished-products {
-  width: 805px;
+  width: 100%;
 }
 
 ._for-manufacturers .account__content-table.table-finished-products {
-  width: 805px;
-}
-
-._for-manufacturers .account__content-table.table-finished-products th:nth-child(4) {
-  -webkit-box-flex: 0;
-  -ms-flex: 0 0 125px;
-  flex: 0 0 125px;
-}
-
-._for-manufacturers .account__content-table.table-finished-products th:last-of-type {
-  -webkit-box-flex: 0;
-  -ms-flex: 0 0 90px;
-  flex: 0 0 90px;
-}
-
-._for-manufacturers .account__content-table.table-finished-products td:nth-child(4) {
-  -webkit-box-flex: 0;
-  -ms-flex: 0 0 125px;
-  flex: 0 0 125px;
-}
-
-._for-manufacturers .account__content-table.table-finished-products td:last-of-type {
-  -webkit-box-flex: 0;
-  -ms-flex: 0 0 90px;
-  flex: 0 0 90px;
+  width: 100%;
 }
 
 ._for-manufacturers .account__content-table.table-calculations {
@@ -3729,6 +3705,11 @@ button,
   left: 0;
   opacity: 1;
   border-radius: unset;
+}
+
+.finished-products .simplebar-track.simplebar-horizontal .simplebar-scrollbar::before {
+  width: calc(100% - 40px);
+  left: 20px;
 }
 
 .package .simplebar-track.simplebar-horizontal .simplebar-scrollbar::before {
