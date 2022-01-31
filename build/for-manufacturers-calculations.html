@@ -6,8 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="ProjectName — описание">
-    <link rel="stylesheet" href="css/style.min.css">
+    <noscript>
+      <style>
+        [data-simplebar] {
+        overflow: auto;
+        }
+      </style>
+    </noscript>
   </head>
+  <link rel="stylesheet" href="css/style.min.css">
   <body class="lk">
     <div class="visually-hidden"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs>
 <linearGradient id="paint0_linear_1253_37733" x1="-0.0175929" y1="28.0961" x2="31.5096" y2="6.07708" gradientUnits="userSpaceOnUse">
@@ -194,6 +201,10 @@
 <path d="M13.5806 17.5829C15.7953 17.5829 17.5829 15.7841 17.5829 13.5806C17.5829 11.3659 15.7841 9.57839 13.5806 9.57839C11.3659 9.57839 9.57837 11.3772 9.57837 13.5806C9.57837 15.7841 11.3771 17.5829 13.5806 17.5829ZM13.5806 11.2535C14.8622 11.2535 15.8965 12.299 15.8965 13.5694C15.8965 14.8398 14.851 15.8853 13.5806 15.8853C12.3102 15.8853 11.2647 14.8398 11.2647 13.5694C11.2647 12.299 12.3102 11.2535 13.5806 11.2535Z" fill="url(#gradient-1)"/>
 <path d="M10.6687 29.3198C10.9947 29.6458 11.5344 29.6458 11.8604 29.3198L29.3309 11.8606C29.6569 11.5346 29.6569 10.9949 29.3309 10.6689C29.1622 10.5003 28.9486 10.4216 28.735 10.4216C28.5214 10.4216 28.3078 10.5003 28.1392 10.6689L10.6687 28.1169C10.3427 28.4542 10.3427 28.9825 10.6687 29.3198Z" fill="url(#gradient-1)"/>
 
+</symbol><symbol id="icon-triangle-left" viewBox="0 0 20 20">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12 5L12 15L7 10L12 5Z" fill="#6A3F24"/>
+</symbol><symbol id="icon-triangle-right" viewBox="0 0 20 20">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8 15L8 5L13 10L8 15Z" fill="#6A3F24"/>
 </symbol></svg>
     </div>
     <div class="wrapper">
@@ -227,67 +238,98 @@
                 <div class="account__content-title-wrapper">
                   <h2 class="account__content-title">Дебиторская задолженность</h2>
                 </div><span class="account__content-sub-title">На дату: 27.09.2021</span>
-                <div class="account__content-table-block">
+                <div class="account__content-table-block calculations" data-simplebar>
                   <div class="account__content-table-box">
                     <table class="account__content-table table-calculations">
-                      <thead>
-                        <tr class="account__content-table-head"> 
-                          <th>Контрагент/Расчетный документ</th>
-                          <th>Сумма</th>
-                          <th>Кол-во упаковки на складе (кг)</th>
-                          <th>Вес упаковки (кг)</th>
-                          <th>Фасовка (кг)</th>
-                          <th>Кол-во мешков (шт) в 1 кг пленки</th>
-                          <th>Кол-во готовых мешков с продукцией (шт)</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>ТМ «Секрет Премиум» для щенков 15 кг</td>
-                          <td>131</td>
-                          <td>692,4</td>
-                          <td>0,15</td>
-                          <td>15</td>
-                          <td>6,67</td>
-                          <td>4 616</td>
-                        </tr>
-                        <tr>
-                          <td>ТМ «Секрет» для собак крупных пород 15 кг</td>
-                          <td>132</td>
-                          <td>409,7</td>
-                          <td>0,15</td>
-                          <td>15</td>
-                          <td>6,67</td>
-                          <td>2 731</td>
-                        </tr>
-                        <tr>
-                          <td>ТМ «Секрет Премиум» для взрослых собак Ягненок и рис 15 кг</td>
-                          <td>133</td>
-                          <td>1 268,05</td>
-                          <td>0,15</td>
-                          <td>15</td>
-                          <td>6,67</td>
-                          <td>8 454</td>
-                        </tr>
-                        <tr>
-                          <td>ТМ «Секрет Премиум» для собак мелких пород 15 кг</td>
-                          <td>134</td>
-                          <td>483,95</td>
-                          <td>0,15</td>
-                          <td>15</td>
-                          <td>6,67</td>
-                          <td>3 006</td>
-                        </tr>
-                        <tr>
-                          <td>ТМ «Секрет» для собак  15 кг (универсальная)</td>
-                          <td>141</td>
-                          <td>1 173,7</td>
-                          <td>0,15</td>
-                          <td>15</td>
-                          <td>6,67</td>
-                          <td>7 824</td>
-                        </tr>
-                      </tbody>
+                      <tr class="thead">
+                        <td class="th" rowspan="3">Контрагент/Расчетный документ</td>
+                        <td class="th" colspan="6">Дебиторская задолженность</td>
+                        <td class="th" colspan="5">В том числе просроченная по срокам просрочки</td>
+                        <td class="th" rowspan="3">Авансы</td>
+                        <td class="th" rowspan="3">Итого (для расчета ОК)</td>
+                      </tr>
+                      <tr> 
+                        <td class="th" colspan="2">Всего</td>
+                        <td class="th" colspan="2">Задолженность не просроченная</td>
+                        <td class="th" colspan="2">Задолженность просроченная</td>
+                        <td class="th" rowspan="2">Просроченная 0-15 дней</td>
+                        <td class="th" rowspan="2">Просроченная 15-30 дней</td>
+                        <td class="th" rowspan="2">Просроченная 30-60 дней</td>
+                        <td class="th" rowspan="2">Просроченная 60-90 дней</td>
+                        <td class="th" rowspan="2">Просроченная &gt; 90 дней</td>
+                      </tr>
+                      <tr>
+                        <td class="th">Сумма</td>
+                        <td class="th">Отсрочка платежа</td>
+                        <td class="th">Сумма</td>
+                        <td class="th">Осталось дней до оплаты</td>
+                        <td class="th">Сумма</td>
+                        <td class="th">Дни</td>
+                      </tr>
+                      <tr>
+                        <td>Оршанский Алексей Александрович</td>
+                        <td>1 219 686,65</td>
+                        <td>21</td>
+                        <td>855 948,53</td>
+                        <td>8</td>
+                        <td>363 738,12</td>
+                        <td>35</td>
+                        <td></td>
+                        <td></td>
+                        <td>363 738,12</td>
+                        <td></td>
+                        <td></td>
+                        <td>– 4 862 083,11</td>
+                        <td>6 081 769,76</td>
+                      </tr>
+                      <tr>
+                        <td>Force Spirit 2014 TOO</td>
+                        <td>1 219 686,65</td>
+                        <td>21</td>
+                        <td>855 948,53</td>
+                        <td>8</td>
+                        <td>363 738,12</td>
+                        <td>35</td>
+                        <td></td>
+                        <td></td>
+                        <td>363 738,12</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>6 081 769,76</td>
+                      </tr>
+                      <tr>
+                        <td>Реализация товаров и услуг ЛККК-001506 от 02.08.2021 14:24:41</td>
+                        <td>363 738,12</td>
+                        <td>21</td>
+                        <td></td>
+                        <td></td>
+                        <td>363 738,12</td>
+                        <td>35</td>
+                        <td></td>
+                        <td></td>
+                        <td>363 738,12</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>6 081 769,76</td>
+                      </tr>
+                      <tr>
+                        <td>Реализация товаров и услуг ЛККК-001878 от 14.09.2021 13:30:52</td>
+                        <td>855 948,53</td>
+                        <td>21</td>
+                        <td>855 948,53</td>
+                        <td>8</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>6 081 769,76</td>
+                      </tr>
                     </table>
                   </div>
                 </div>
@@ -339,7 +381,7 @@
         </section>
       </main>
     </div>
-    <div class="modal modal--preload modal--log-in modal--active">
+    <div class="modal modal--preload modal--log-in">
       <div class="modal__wrapper">
         <div class="modal__overlay"></div>
         <div class="modal__content">
