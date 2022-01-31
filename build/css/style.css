@@ -1478,6 +1478,7 @@ button,
 }
 
 .modal--recommendations-registration .recommendations__form .recommendations-form__submit-btn {
+  display: inline-block;
   margin: 30px 0 0 0;
 }
 
@@ -4199,6 +4200,10 @@ button,
 }
 
 @media (max-width: 640px) {
+  .modal--program-rules .modal__content {
+    padding: 25px 15px 20px;
+  }
+
   .account__container {
     padding: 0 35px;
   }
