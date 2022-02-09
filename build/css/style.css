@@ -1961,7 +1961,7 @@ button,
   line-height: 16px;
   font-style: normal;
   font-weight: normal;
-  color: #017FD6;
+  color: #6a3f24;
   text-align: left;
   border: 1px solid rgba(106, 63, 36, 0.3);
 }
@@ -1976,8 +1976,8 @@ button,
 
 ._for-manufacturers .account__content-table tbody tr td {
   padding: 9px;
-  font-size: 12px;
-  line-height: 16px;
+  font-size: 14px;
+  line-height: 18px;
   font-style: normal;
   font-weight: normal;
   color: #6a3f24;
@@ -1991,7 +1991,7 @@ button,
 
 ._for-manufacturers .account__content-table-title {
   width: 100%;
-  background-color: #017FD6;
+  background-color: #6a3f24;
   padding: 10px;
   height: 40px;
 }
@@ -2011,6 +2011,16 @@ button,
 
 ._for-manufacturers .account__content-table.table-finished-products {
   width: 100%;
+}
+
+._for-manufacturers .account__content-table.table-finished-products .tr31 {
+  background-color: #6a3f24;
+}
+
+._for-manufacturers .account__content-table.table-finished-products .tr31 td {
+  color: #ffffff;
+  min-width: 100px;
+  border: none;
 }
 
 ._for-manufacturers .account__content-table.table-calculations {
@@ -2042,6 +2052,13 @@ button,
   height: 40px;
 }
 
+._for-manufacturers .account__content-table.table-sales-plan tr:nth-child(1) .th:nth-child(8),
+._for-manufacturers .account__content-table.table-sales-plan tr:nth-child(1) .th:nth-child(15),
+._for-manufacturers .account__content-table.table-sales-plan tr:nth-child(1) .th:nth-child(16) {
+  background-color: #6a3f24;
+  color: #ffffff;
+}
+
 ._for-manufacturers .account__content-table.table-sales-plan tr:nth-child(5) .th {
   padding: 3px;
 }
@@ -2051,7 +2068,7 @@ button,
   font-size: 12px;
   line-height: 1.33;
   text-align: center;
-  color: #017FD6;
+  color: #6a3f24;
 }
 
 ._for-manufacturers .account__content-table.table-sales-plan .th:first-of-type {
@@ -2118,13 +2135,9 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-  -ms-flex-direction: row-reverse;
-  flex-direction: row-reverse;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
 }
 
 ._for-manufacturers .account__content-upload-btn-label:hover {
